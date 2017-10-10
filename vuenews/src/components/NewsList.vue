@@ -2,8 +2,7 @@
   <div class ="newslist">
     Newslist
   </div>
-
-  </template>
+</template>
 
   <script>
   export default {

@@ -2,15 +2,20 @@
   <div class ="sourceselection">
     SourceSelection
   </div>
+</template>
 
-  </template>
-
-  <script>
+<script>
   export default {
-    name: 'sourceselection'
+    name: 'sourceselection',
+    data () {
+      return {
+        sources: [],
+        source: ''
+    }
   }
-  </script>
+}
+</script>
 
-  <style scoped>
+<style scoped>
 
-  </style>
+</style>
