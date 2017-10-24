@@ -47,5 +47,8 @@ created: function () {
 </script>
 
 <style scoped>
+ .jumbotron {
+    background-color: lightskyblue;
+  }
 
   </style>

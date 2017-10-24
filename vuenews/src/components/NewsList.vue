@@ -47,6 +47,7 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
   .media-object {
     width: 128px;
     padding: 10px;
@@ -54,5 +55,8 @@ export default {
   .media {
     border-top: 1px solid lightgray;
     padding-top: 20px;
+  }
+  .newslist {
+    color:azure;
   }
 </style>
