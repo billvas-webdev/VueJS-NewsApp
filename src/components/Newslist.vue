@@ -1,6 +1,6 @@
 <template>
   <div class="newslist">
-   <div class="container">
+   <div class="flex-container">
       <ul class="media-list">
         <li class="media" v-for="article in articles">
           <div class="media-left">
