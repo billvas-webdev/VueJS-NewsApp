@@ -49,14 +49,36 @@ export default {
 <style scoped>
 
   .media-object {
-    width: 128px;
-    padding: 10px;
+    /*width: 128px;*/
+    border-radius: 55px;
+    height: 350px;
+    padding: 20px;
   }
   .media {
     border-top: 1px solid lightgray;
-    padding-top: 20px;
+    padding: 20px 10px 20px 10px;
   }
+
+  li.media{
+
+    background-color: #131313;
+    border-radius: 25px;
+    width: 1150px;
+  }
+
   .newslist {
+
     color:azure;
+    font-size: 22px;
+  }
+  a {
+
+    font-size: 32px;
+  }
+
+
+
+  h4 {
+    padding-top: 55px;
   }
 </style>

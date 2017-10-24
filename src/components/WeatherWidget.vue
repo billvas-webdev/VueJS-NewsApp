@@ -2,11 +2,12 @@
 <div class="jumbotron">
     <weather
         api-key="a1a5357a4bc875aba578cf0eec58ab94"
-        title="Weather"
+        title="Weather for Seattle, Washington"
         latitude="47.671081"
         longitude="-122.326071"
         language="en"
         units="us">
+
     </weather>
 </div>
 </template>
@@ -24,6 +25,7 @@ export default {
 <style scoped>
   .jumbotron {
     background-color: lightcoral;
+
   }
 
 </style>
