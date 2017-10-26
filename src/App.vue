@@ -43,7 +43,8 @@ export default {
   @media (min-width: 1200px){
 
   .container {
-    width: 1500px;
+
+    width: 1100px;
   }
 }
 @media (max-width: 992px){
