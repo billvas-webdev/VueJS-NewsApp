@@ -31,6 +31,7 @@ export default {
 }
 </script>
 <style>
+
   body {
     background-color: #2c2c32;
 
@@ -38,4 +39,35 @@ export default {
   #app {
     padding-top: 20px
   }
+
+  @media (min-width: 1200px){
+
+  .container {
+    width: 1500px;
+  }
+}
+@media (max-width: 992px){
+
+  .container {
+    width: 1470px;
+  }
+}
+@media (max-width: 768px){
+
+  .container {
+    width: 750px;
+  }
+  .media-object {
+    height: 23rem;
+  }
+  a {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 360px){
+
+  .container {
+    width: 1100px;
+  }
+}
 </style>

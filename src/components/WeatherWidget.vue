@@ -24,7 +24,7 @@ export default {
 </script>
 <style scoped>
   .jumbotron {
-    background-color: lightcoral;
+    background-color: yellow;
 
   }
 

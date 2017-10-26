@@ -47,8 +47,32 @@ created: function () {
 </script>
 
 <style scoped>
- .jumbotron {
-    background-color: lightskyblue;
+  .jumbotron {
+    background-color: #3491e4;
+    font-family: "helvetica", "georgia", "times";
+}
+
+  h2{
+
+    font-size: 4rem;
+}
+  h4{
+    font-size: 2rem;
+  }
+  h6{
+    font-size: 1.5rem;
+  }
+  .btn-primary{
+    font-size: 1.4rem;
+    border-color: 020d17;
+    background-color:#333;
+
   }
 
+  select.form-control {
+  font-style: "helvetica", "georgia", "times";
+  font-size: 1.8rem;
+  height: 4.2rem;
+
+}
   </style>

@@ -48,10 +48,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+
+
   .media-object {
-    /*width: 128px;*/
+    width: 20em;
     border-radius: 55px;
-    height: 350px;
+    height: auto;
     padding: 20px;
   }
   .media {
@@ -63,22 +65,24 @@ export default {
 
     background-color: #131313;
     border-radius: 25px;
-    width: 1150px;
+    width: 100%;
   }
 
   .newslist {
 
     color:azure;
-    font-size: 22px;
+    font-size: 2.3rem;
   }
   a {
 
-    font-size: 32px;
+    font-size: 2.75rem;
   }
-
-
-
   h4 {
     padding-top: 55px;
   }
+  h5 {
+    font-size: 1.75rem;
+  }
+
+
 </style>
