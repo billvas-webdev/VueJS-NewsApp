@@ -57,7 +57,7 @@ export default {
     padding: 20px;
   }
   .media {
-    border-top: 1px solid lightgray;
+    border-top: 1px solid #f8b500;
     /*padding: 20px 20px 20px 20px;*/
   }
 

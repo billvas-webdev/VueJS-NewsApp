@@ -51,7 +51,7 @@ created: function () {
     padding:1em;
     zoom: 175%;
     height: 17em;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid #f8b500;
     border-radius: 1.75em;
     /*background-color: #3491e4;*/
     font-family: Helvetica, Arial, sans-serif;
