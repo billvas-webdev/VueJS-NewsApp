@@ -24,6 +24,9 @@ export default {
 </script>
 <style scoped>
   .jumbotron {
+    height: 17em;
+    zoom: 175%;
+    padding: 1em;
     border-top: 1px solid lightgray;
     border-radius: 2.25em;
     background: #fceabb;  /* fallback for old browsers */

@@ -76,21 +76,23 @@ export default {
     font-size: 2.3rem;
   }
   a {
+    color:#299cff;
 
-    font-size: 2.20rem;
   }
   p{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family:"Open Sans";
     padding-right: 1.5em;
-    font-size: .75em;
-    font-weight: 100;
+    font-size: 1em;
+    font-weight: normal;
 
 }
   h4 {
+     font-size: 1.4em;
     padding-top: 46px;
   }
   h5 {
     font-size: 1.75rem;
+    color: #f8b500;
   }
 
 
