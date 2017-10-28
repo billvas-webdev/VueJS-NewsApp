@@ -87,6 +87,7 @@ export default {
 
 }
   h4 {
+
      font-size: 1.4em;
     padding-top: 46px;
   }

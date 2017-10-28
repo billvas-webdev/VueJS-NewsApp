@@ -34,6 +34,7 @@ export default {
 
   body {
 
+
     background-color: #2c2c32;
     /*background: #000000;  /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */

@@ -23,18 +23,19 @@ export default {
 }
 </script>
 <style scoped>
+  .fe_container{
+    color:#163761;
+  }
   .jumbotron {
+    color:#163761;
     height: 17em;
-    zoom: 175%;
+    zoom: 155%;
     padding: 1em;
     border-top: 1px solid lightgray;
-    border-radius: 2.25em;
+    border-radius: 1.75em;
     background: #fceabb;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-  }
+}
 
 </style>

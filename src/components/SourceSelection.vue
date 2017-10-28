@@ -52,7 +52,7 @@ created: function () {
     zoom: 175%;
     height: 17em;
     border-top: 1px solid lightgray;
-    border-radius: 2.25em;
+    border-radius: 1.75em;
     /*background-color: #3491e4;*/
     font-family: Helvetica, Arial, sans-serif;
     background: #F0F2F0;  /* fallback for old browsers */
@@ -61,17 +61,20 @@ created: function () {
 }
 
   h2{
+    text-shadow: 1px .5px 0 #f8b500;
+    color:#163761;
     text-align: center;
     font-weight: bold;
     font-size: 3.5rem;
 }
   h4{
-
+    text-shadow: 1px .5px 0 #f8b500;
+    color:#163761;
     text-align: center;
     font-size: 2rem;
   }
   h6{
-
+    color:#163761;
     font-size: 1rem;
   }
   .btn-primary{
@@ -97,6 +100,7 @@ created: function () {
   }
 
   select.form-control {
+  color:#163761;
   font-style: "helvetica", "georgia", "times";
   font-size: 1.5rem;
   height: 2em;
