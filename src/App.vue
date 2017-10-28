@@ -33,7 +33,16 @@ export default {
 <style>
 
   body {
+
     background-color: #2c2c32;
+    /*background: #000000;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    background-size: cover;
+
 
   }
   #app {
@@ -44,19 +53,19 @@ export default {
 
   .container {
 
-    width: 1100px;
+    width: 110rem;
   }
 }
 @media (max-width: 992px){
 
   .container {
-    width: 1470px;
+    width: 125rem;
   }
 }
 @media (max-width: 768px){
 
   .container {
-    width: 750px;
+    width: 110rem;
   }
   .media-object {
     height: 23rem;
@@ -64,11 +73,13 @@ export default {
   a {
     font-size: 2.5rem;
   }
+
 }
+
 @media (max-width: 360px){
 
   .container {
-    width: 1100px;
+    width: 100px;
   }
 }
 </style>

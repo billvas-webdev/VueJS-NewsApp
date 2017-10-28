@@ -51,19 +51,21 @@ export default {
 
 
   .media-object {
-    width: 20em;
-    border-radius: 55px;
-    height: auto;
+    max-width: 20em;
+    border-radius: 2.25em;
+    max-height: 15em;
     padding: 20px;
   }
   .media {
     border-top: 1px solid lightgray;
-    padding: 20px 10px 20px 10px;
+    /*padding: 20px 20px 20px 20px;*/
   }
 
   li.media{
-
     background-color: #131313;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #201f23, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #201f23, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 25px;
     width: 100%;
   }
@@ -75,14 +77,22 @@ export default {
   }
   a {
 
-    font-size: 2.75rem;
+    font-size: 2.20rem;
   }
+  p{
+    font-family: Helvetica, Arial, sans-serif;
+    padding-right: 1.5em;
+    font-size: .75em;
+    font-weight: 100;
+
+}
   h4 {
-    padding-top: 55px;
+    padding-top: 46px;
   }
   h5 {
     font-size: 1.75rem;
   }
+
 
 
 </style>

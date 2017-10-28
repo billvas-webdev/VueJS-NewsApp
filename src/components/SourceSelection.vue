@@ -48,19 +48,25 @@ created: function () {
 
 <style scoped>
   .jumbotron {
-    background-color: #3491e4;
-    font-family: "helvetica", "georgia", "times";
+    border-top: 1px solid lightgray;
+    border-radius: 2.25em;
+    /*background-color: #3491e4;*/
+    font-family: Helvetica, Arial, sans-serif;
+    background: #F0F2F0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #163761, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #163761, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
   h2{
 
+    font-weight: bold;
     font-size: 4rem;
 }
   h4{
     font-size: 2rem;
   }
   h6{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .btn-primary{
     font-size: 1.4rem;
@@ -73,6 +79,11 @@ created: function () {
   font-style: "helvetica", "georgia", "times";
   font-size: 1.8rem;
   height: 4.2rem;
+}
+
+  .glyphicon {
+    top:4px;
+    font-weight: bolder;
 
 }
   </style>
