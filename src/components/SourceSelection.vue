@@ -2,8 +2,8 @@
   <div class ="sourceselection">
     <div class="jumbotron">
 
-  <h2><span class="glyphicon glyphicon-list-alt"></span> News List</h2>
-    <h4>Select News Source</h4>
+  <h2><span class="glyphicon glyphicon-list-alt"></span> Daily News</h2>
+    <h4>&nbsp; &nbsp; &nbsp; Select News Source</h4>
     <select class="form-control" v-on:change="sourceChanged">
     <option v-bind:value="source.id" v-for="source in sources">{{source.name}}</option>
     </select>
