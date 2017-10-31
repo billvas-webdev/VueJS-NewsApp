@@ -2,7 +2,7 @@
 <div class="jumbotron">
     <weather
         api-key="a1a5357a4bc875aba578cf0eec58ab94"
-        title="Weather for Seattle, Washington"
+        title="Weather Forecast"
         latitude="47.671081"
         longitude="-122.326071"
         language="en"
@@ -20,15 +20,25 @@ export default {
     components: {
         'weather': VueWeatherWidget
     },
-}
+
+    created () {
+      if(navigator.geolocation){
+         navigator.geolocation.getCurrentPosition(position => {
+          this.lat = position.coords.latitude;
+          this.lon = position.coords.longitude;
+        });
+      }
+    }
+  }
 </script>
 <style scoped>
   .fe_container{
     color:#163761;
   }
   .jumbotron {
+    margin-top: 2.5em;
     color:#163761;
-    height: 17em;
+    height: 20em;
     zoom: 155%;
     padding: 1em;
     border-top: 1px solid lightgray;

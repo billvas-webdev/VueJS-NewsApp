@@ -4,6 +4,8 @@
 
   <h2><span class="glyphicon glyphicon-list-alt"></span> Daily News</h2>
     <h4>&nbsp; &nbsp; &nbsp; Select News Source</h4>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <select class="form-control" v-on:change="sourceChanged">
     <option v-bind:value="source.id" v-for="source in sources">{{source.name}}</option>
     </select>
@@ -50,7 +52,7 @@ created: function () {
   .jumbotron {
     padding:1em;
     zoom: 175%;
-    height: 17em;
+    height: 16em;
     border-top: 1px solid #f8b500;
     border-radius: 1.75em;
     /*background-color: #3491e4;*/
@@ -74,6 +76,8 @@ created: function () {
     font-size: 2rem;
   }
   h6{
+    font-weight: 700;
+    padding: 1em;
     color:#163761;
     font-size: 1rem;
   }
@@ -94,9 +98,9 @@ created: function () {
     cursor:pointer;
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
-    border-radius:2px;
+    border-radius:12px;
     background-color:#163761;
-    border-bottom:1px solid #f8b500;
+    border:1px solid #f8b500;
   }
 
   select.form-control {

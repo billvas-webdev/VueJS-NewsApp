@@ -1,4 +1,6 @@
 <template>
+
+
   <div class="newslist">
    <div class="flex-container">
       <ul class="media-list">
@@ -17,6 +19,9 @@
       </ul>
     </div>
   </div>
+  </div>
+
+
 </template>
 <script>
 export default {
