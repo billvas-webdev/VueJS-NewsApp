@@ -54,7 +54,7 @@ created: function () {
     zoom: 175%;
     height: 16em;
     border-top: 1px solid #f8b500;
-    border-radius: 1.75em;
+    border-radius: .5em;
     /*background-color: #3491e4;*/
     font-family: Helvetica, Arial, sans-serif;
     background: #F0F2F0;  /* fallback for old browsers */
@@ -80,6 +80,8 @@ created: function () {
     padding: 1em;
     color:#163761;
     font-size: 1rem;
+    padding: .5em 0 .25em 0;
+
   }
   .btn-primary{
      display:block; /* change this from inline-block */
@@ -98,7 +100,7 @@ created: function () {
     cursor:pointer;
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
-    border-radius:12px;
+    border-radius:.5em;
     background-color:#163761;
     border:1px solid #f8b500;
   }
@@ -114,5 +116,13 @@ created: function () {
     top:4px;
     font-weight: bolder;
 
+}
+@media (max-width: 375px){
+
+  .jumbotron  {
+
+     height: 13em;
+
+  }
 }
   </style>

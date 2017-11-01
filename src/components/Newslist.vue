@@ -57,7 +57,7 @@ export default {
 
   .media-object {
     max-width: 20em;
-    border-radius: 2.25em;
+    border-radius: 2em;
     max-height: 15em;
     padding: 20px;
   }
@@ -71,7 +71,7 @@ export default {
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #201f23, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #201f23, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 25px;
+    border-radius: .5em;
     width: 100%;
   }
 
@@ -85,22 +85,47 @@ export default {
 
   }
   p{
+    line-height: 1.25em;
     font-family:"Open Sans";
     padding-right: 1.5em;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: normal;
 
 }
   h4 {
-
-     font-size: 1.4em;
+    line-height: 1em;
+    font-size: 1.4em;
     padding-top: 46px;
   }
   h5 {
+    line-height: 1.5em;
     font-size: 1.75rem;
     color: #f8b500;
   }
+@media (max-width: 360px){
 
+  li.media  {
+
+
+     height: 12.5em;
+
+  }
+  .media-object {
+    max-width: 15.5em;
+    max-height: 12.5em;
+}
+ a {
+    line-height: 1em;
+    font-size: 1.25em;
+    padding-top: 0;
+  }
+ p{
+    line-height: 1.1em;
+    font-size: 1.65em;
+    padding-bottom: 1em;
+ }
+
+}
 
 
 </style>

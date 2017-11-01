@@ -36,16 +36,24 @@ export default {
     color:#163761;
   }
   .jumbotron {
-    margin-top: 2.5em;
+
     color:#163761;
     height: 20em;
     zoom: 155%;
     padding: 1em;
     border-top: 1px solid lightgray;
-    border-radius: 1.75em;
+    border-radius: .5em;
     background: #fceabb;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media (max-width: 375px){
+
+  .jumbotron  {
+     zoom: 170%;
+     height: 12em;
+
+  }
 }
 
 </style>

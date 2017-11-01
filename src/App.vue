@@ -3,21 +3,24 @@
   <transition name="zoomIn">
           <div v-if="show"></div>
         </transition>-->
+
   <div class="container" id="app">
-    <iView></iView>
+    <HeadNav></HeadNav>
     <WeatherWidget></WeatherWidget>
     <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
     <Newslist v-bind:source="source"></Newslist>
     <CircleMenu></CircleMenu>
+
   </div>
-  </div>
+
 </template>
 <script>
+import HeadNav from './components/HeadNav'
 import WeatherWidget from './components/WeatherWidget'
 import SourceSelection from './components/SourceSelection'
 import Newslist from './components/Newslist'
 import CircleMenu from './components/VueCircleMenu'
-import iView from './components/iView'
+
 
 export default {
   name: 'app',
@@ -26,7 +29,7 @@ export default {
     SourceSelection,
     Newslist,
     CircleMenu,
-    iView
+    HeadNav
 
 
   },
@@ -60,34 +63,48 @@ export default {
 
   }
   #app {
-    padding-top: 20px
+    padding: 10px 0 10px 0;
   }
-
+  .jumbotron{
+    margin-bottom: 7px;
+  }
+.container .jumbotron{
+  height: 30em;
+}
 
   @media (min-width: 1200px){
 
   .container {
 
-    width: 110rem;
+    width: 120em;
     padding-left: 5px;
     padding-right: 5px;
   }
 }
+@media (max-width: 1024px){
+.container {
+    width: auto;
+  }
+}
+
+
 @media (max-width: 992px){
 
   .container {
-    width: 125rem;
+    width: auto;
   }
 }
 @media (max-width: 768px){
 
   .container {
-    width: 65em;
-    zoom: 30%;
-
-
+    width: auto;
+    zoom: 60%;
   }
+
+
+
   .media-object {
+    zoom: 100%;
     height: 23rem;
   }
   a {
@@ -96,14 +113,30 @@ export default {
 
 }
 
-@media (max-width: 360px){
+@media (max-width: 375px){
+
+  .media-object {
+
+    width: auto;
+
+  }
+  h4{
+    font-size: .85em;
+  }
+  i{
+    font-size: 1em;
+  }
+   p{
+
+    font-size: 30em;
+  }
+
+
 
   .container {
-    width: 40em;
-    zoom: 20%;
+    width: auto;
+    zoom: 30%;
   }
-  .jumbotron {
-    height: 20em;
-  }
+
 }
 </style>
