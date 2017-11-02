@@ -86,7 +86,6 @@ export default {
   }
   p{
     line-height: 1.25em;
-    font-family:"Open Sans";
     padding-right: 1.5em;
     font-size: 1.2em;
     font-weight: normal;
@@ -103,29 +102,110 @@ export default {
     color: #f8b500;
   }
 @media (max-width: 360px){
-
+  .container{
+    height: 13.5em;
+  }
   li.media  {
-
-
-     height: 12.5em;
+    height: 14em;
 
   }
   .media-object {
-    max-width: 15.5em;
-    max-height: 12.5em;
+    max-width: 15em;
+    max-height: 12em;
 }
  a {
     line-height: 1em;
-    font-size: 1.25em;
+    font-size: 1.55em;
     padding-top: 0;
   }
  p{
     line-height: 1.1em;
-    font-size: 1.65em;
+    font-size: 1.45em;
     padding-bottom: 1em;
  }
 
 }
+@media (max-width: 568px){
+  .container{
+    height: 16.5em;
+  }
+  li.media  {
+    height: 15.5em;
+  }
+  h5 {
+    line-height: 1.5em;
+    font-size: 1.15em;
 
+  }
+  a {
+    line-height: 1em;
+    font-size: 1.1em;
+    padding-top: 0;
+  }
+
+  .media-object {
+    max-width: 15em;
+    max-height: 14em;
+}
+p{
+    line-height: 1.1em;
+    font-size: 1.3em;
+    padding-bottom: 1em;
+ }
+}
+
+@media (max-width: 320px){
+  .container{
+    height: 16.5em;
+  }
+  li.media  {
+    height: 15em;
+  }
+  a {
+    line-height: 1em;
+    font-size: 1.2em;
+    padding-top: 0;
+  }
+
+  .media-object {
+    max-width: 18em;
+    max-height: 15em;
+}
+p{
+    line-height: 1.1em;
+    font-size: 1.55em;
+    padding-bottom: 1em;
+ }
+}
+
+@media (max-width: 768px){
+  .container{
+    height: 13.5em;
+  }
+  li.media  {
+    height: 14em;
+
+  }
+  .media-object {
+    max-width: 15em;
+    max-height: 11em;
+}
+h5 {
+    line-height: 1.5em;
+    font-size: 1.25em;
+
+  }
+ a {
+    line-height: 1em;
+    font-size: 1.3em;
+    padding-top: 0;
+  }
+ p{
+    line-height: 1.1em;
+    font-size: 1.8em;
+    padding-bottom: 1em;
+ }
+
+}
 
 </style>

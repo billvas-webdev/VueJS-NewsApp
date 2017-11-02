@@ -11,7 +11,7 @@
     </select>
     <div v-if="source">
       <h6>{{source.description}}</h6>
-      <a v-bind:href="source.url" class="btn btn-primary" target="blank">Go To {{source.name}} Website</a>
+      <a v-bind:href="source.url" class="btn btn-lg btn-primary btn-block" target="blank">Go To {{source.name}} Website</a>
     </div>
   </div>
   </div>
@@ -56,7 +56,7 @@ created: function () {
     border-top: 1px solid #f8b500;
     border-radius: .5em;
     /*background-color: #3491e4;*/
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Lato', arial, sans-serif;
     background: #F0F2F0;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #1576cc, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #1576cc, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -76,30 +76,28 @@ created: function () {
     font-size: 2rem;
   }
   h6{
+    margin-top: .5em;
+
     font-weight: 700;
-    padding: 1em;
     color:#163761;
     font-size: 1rem;
     padding: .5em 0 .25em 0;
 
   }
   .btn-primary{
-     display:block; /* change this from inline-block */
+    display:block; /* change this from inline-block */
     width:40%; /* setting the width */
     margin:0 auto; /* this will center  it */
     position:relative;
     font-style:normal;
     font-weight:normal;
-    font-family:"Open Sans";
+    font-family: 'Lato', arial, sans-serif;
     font-size:14px;
-    outline:none;
+    outline:#f8b500;
     color:#fff;
     border:none;
     text-decoration:none;
     text-align:center;
-    cursor:pointer;
-    -webkit-border-radius:2px;
-    -moz-border-radius:2px;
     border-radius:.5em;
     background-color:#163761;
     border:1px solid #f8b500;
@@ -107,7 +105,7 @@ created: function () {
 
   select.form-control {
   color:#163761;
-  font-style: "helvetica", "georgia", "times";
+  font-family: 'Montserrat','Lato', arial, sans-serif;
   font-size: 1.5rem;
   height: 2em;
 }
@@ -121,7 +119,7 @@ created: function () {
 
   .jumbotron  {
 
-     height: 13em;
+     height: 14em;
 
   }
 }

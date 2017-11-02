@@ -4,7 +4,7 @@
     <footer class="footer">
         <div class="container text-center">
                 <!--/* footer content here*/-->
-               <small class="copyright">Designed with <i class="fa fa-heart"></i> by Bill Vasilopoulos<a href="_blank"></a> </small>
+               <small class="copyright"> <i class="fa fa-newspaper-o" aria-hidden="true"></i> <a href="https://www.billvas.com" data-toggle="tooltip" title="Visit my portfolio site at billvas.com"> &nbsp; Made by Bill Vasilopoulos 2017</a></small>
 
 
 
@@ -47,6 +47,7 @@ export default {
   color: #fff;
   margin-top: 10px;
   padding: 10px 0;
+  border-top: 1px solid #f8b500;
   border-bottom: 1px solid #f8b500;
   border-radius: .5em;
 }
@@ -56,9 +57,12 @@ export default {
   font-size: 14px;
 }
 .footer a {
-  color: #fff;
+  color: #a1aab4;
 }
-.footer .fa-heart {
+.footer a:hover{
+  color:#fff;
+}
+.footer .fa-newspaper-o {
   color: #fb866a;
 }
 

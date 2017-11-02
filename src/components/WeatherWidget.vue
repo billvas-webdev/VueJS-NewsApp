@@ -47,11 +47,11 @@ export default {
     background: -webkit-linear-gradient(to top, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-@media (max-width: 375px){
+@media (max-width: 360px){
 
   .jumbotron  {
      zoom: 170%;
-     height: 12em;
+     height: 15em;
 
   }
 }

@@ -5,11 +5,12 @@
         </transition>-->
 
   <div class="container" id="app">
+
     <HeadNav></HeadNav>
     <WeatherWidget></WeatherWidget>
     <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
     <Newslist v-bind:source="source"></Newslist>
-    <CircleMenu></CircleMenu>
+    <Footer></Footer>
 
   </div>
 
@@ -19,7 +20,8 @@ import HeadNav from './components/HeadNav'
 import WeatherWidget from './components/WeatherWidget'
 import SourceSelection from './components/SourceSelection'
 import Newslist from './components/Newslist'
-import CircleMenu from './components/VueCircleMenu'
+import Footer from './components/Footer'
+
 
 
 export default {
@@ -28,8 +30,9 @@ export default {
     WeatherWidget,
     SourceSelection,
     Newslist,
-    CircleMenu,
-    HeadNav
+    HeadNav,
+    Footer,
+
 
 
   },
@@ -50,7 +53,7 @@ export default {
 
   body {
 
-
+    font-family: 'Lato', arial, sans-serif;
     background-color: #263140;
     /*background: #000000;  /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -72,11 +75,11 @@ export default {
   height: 30em;
 }
 
-  @media (min-width: 1200px){
+  @media (max-width: 1200px){
 
   .container {
 
-    width: 120em;
+    width: 90em;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -120,8 +123,8 @@ export default {
     width: auto;
 
   }
-  h4{
-    font-size: .85em;
+  a{
+    font-size: 1em;
   }
   i{
     font-size: 1em;
