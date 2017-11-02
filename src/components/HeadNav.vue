@@ -79,13 +79,6 @@
     font-weight:bold;
     margin-bottom: 10px;
 }
-
-
-
-body {
-	background: #eee !important;
-}
-
 .wrapper {
  	margin-top: 0;
   margin-bottom: 0;
