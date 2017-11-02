@@ -2,8 +2,8 @@
   <div class ="sourceselection">
     <div class="jumbotron">
 
-  <h2><span class="glyphicon glyphicon-list-alt"></span> Daily News</h2>
-    <h4>&nbsp; &nbsp; &nbsp; Select News Source</h4>
+  <h2><span class="fa fa-newspaper-o"></span> Daily News</h2>
+    <h4>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select News Source</h4>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <select class="form-control" v-on:change="sourceChanged">
@@ -110,8 +110,9 @@ created: function () {
   height: 2em;
 }
 
-  .glyphicon {
-    top:4px;
+  .fa-newspaper-o {
+    position:relative;
+    top:.1em;
     font-weight: bolder;
 
 }

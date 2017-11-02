@@ -65,7 +65,9 @@ export default {
 .footer .fa-newspaper-o {
   color: #fb866a;
 }
-
+.fa {
+  font-size:1.3em
+}
 </style>
 
 
