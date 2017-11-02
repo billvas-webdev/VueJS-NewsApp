@@ -101,6 +101,34 @@ export default {
     font-size: 1.75rem;
     color: #f8b500;
   }
+  @media (max-width: 568px){
+  .container{
+    height: 16.5em;
+  }
+  li.media  {
+    height: 15.5em;
+  }
+  h5 {
+    line-height: 1.5em;
+    font-size: 1.15em;
+
+  }
+  a {
+    line-height: 1em;
+    font-size: 1.1em;
+    padding-top: 0;
+  }
+
+  .media-object {
+    max-width: 15em;
+    max-height: 14em;
+}
+p{
+    line-height: 1.1em;
+    font-size: 1.3em;
+    padding-bottom: 1em;
+ }
+}
 @media (max-width: 360px){
   .container{
     height: 13.5em;

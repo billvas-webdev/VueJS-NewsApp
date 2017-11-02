@@ -17,9 +17,6 @@
   <style>
 
 
-body {
-	background: #eee !important;
-}
 
 .wrapper {
 	margin-top: 80px;
