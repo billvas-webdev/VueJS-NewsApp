@@ -48,7 +48,7 @@ export default {
   margin-top: 10px;
   padding: 10px 0;
   border-top: 1px solid #f8b500;
-  border-bottom: 1px solid #f8b500;
+
   border-radius: .5em;
 }
 .footer .copyright {
@@ -63,10 +63,13 @@ export default {
   color:#fff;
 }
 .footer .fa-newspaper-o {
-  color: #fb866a;
+  color: #f8b500;
+  position: relative;
+  top:.2rem;
 }
 .fa {
-  font-size:1.3em
+  font-size:1.45em
+
 }
 </style>
 

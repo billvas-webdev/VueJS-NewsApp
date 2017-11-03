@@ -129,6 +129,7 @@ p{
     padding-bottom: 1em;
  }
 }
+/********* Samsung Galaxy S5 ************/
 @media (max-width: 360px){
   .container{
     height: 13.5em;
@@ -225,12 +226,12 @@ h5 {
   }
  a {
     line-height: 1em;
-    font-size: 1.3em;
+    font-size: 1em;
     padding-top: 0;
   }
  p{
     line-height: 1.1em;
-    font-size: 1.8em;
+    font-size: 1.3em;
     padding-bottom: 1em;
  }
 

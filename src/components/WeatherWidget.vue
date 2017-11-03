@@ -6,7 +6,9 @@
         latitude="47.671081"
         longitude="-122.326071"
         language="en"
-        units="us">
+        units="us"
+        bar-color="#2b3b50"
+        text-color="#072137">
 
     </weather>
 </div>
@@ -41,7 +43,7 @@ export default {
     height: 20em;
     zoom: 155%;
     padding: 1em;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid #f8b500;
     border-radius: .5em;
     background: #fceabb;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
@@ -50,10 +52,18 @@ export default {
 @media (max-width: 360px){
 
   .jumbotron  {
-     zoom: 170%;
+     zoom:inherit;
      height: 15em;
 
   }
 }
+
+@media (max-width: 414px){
+  .jumbotron {
+    zoom: 155%;
+  }
+}
+
+
 
 </style>

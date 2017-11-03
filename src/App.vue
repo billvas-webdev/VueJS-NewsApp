@@ -10,7 +10,7 @@
     <WeatherWidget></WeatherWidget>
     <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
     <Newslist v-bind:source="source"></Newslist>
-    <Footer></Footer>
+    <FootComp></FootComp>
 
   </div>
 
@@ -20,7 +20,7 @@ import HeadNav from './components/HeadNav'
 import WeatherWidget from './components/WeatherWidget'
 import SourceSelection from './components/SourceSelection'
 import Newslist from './components/Newslist'
-import Footer from './components/Footer'
+import FootComp from './components/FootComp'
 
 
 
@@ -31,7 +31,7 @@ export default {
     SourceSelection,
     Newslist,
     HeadNav,
-    Footer,
+    FootComp,
 
 
 
@@ -54,7 +54,8 @@ export default {
   body {
 
     font-family: 'Lato', arial, sans-serif;
-    background-color: #263140;
+    /*background-color: #263140;*/
+    background-color: #082542;
     /*background: #000000;  /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     /*background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

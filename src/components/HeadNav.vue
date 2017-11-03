@@ -69,11 +69,13 @@
 
 <style scoped>
 .navbar{
+  font-size: 1.15em;
   font-family: 'Lato', arial, sans-serif;
   margin-bottom: .75em;
   border-top: 1px solid #f8b500;
   border-radius: .5em;
 }
+
   h2{
     text-align: center;
     font-weight:bold;
