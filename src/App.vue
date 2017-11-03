@@ -12,15 +12,19 @@
     <Newslist v-bind:source="source"></Newslist>
     <FootComp></FootComp>
 
+
   </div>
+
 
 </template>
 <script>
+
 import HeadNav from './components/HeadNav'
 import WeatherWidget from './components/WeatherWidget'
 import SourceSelection from './components/SourceSelection'
 import Newslist from './components/Newslist'
 import FootComp from './components/FootComp'
+
 
 
 
@@ -32,6 +36,7 @@ export default {
     Newslist,
     HeadNav,
     FootComp,
+
 
 
 

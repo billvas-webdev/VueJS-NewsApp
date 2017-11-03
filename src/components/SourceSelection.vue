@@ -72,7 +72,7 @@ created: function () {
 }
   h4{
     position: relative;
-    left:1.4em;
+
     text-shadow: 1px .5px 0 #f8b500;
     color:#072137;
     text-align: center;
@@ -140,10 +140,7 @@ created: function () {
   .fa-newspaper-o {
     font-size: 1.75em;
 }
-  h2{
-    position: relative;
-    right:.2em;
-  }
+
 }
 /***********   *************/
 @media (max-width: 414px){
