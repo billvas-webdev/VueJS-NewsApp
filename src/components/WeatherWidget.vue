@@ -52,7 +52,7 @@ export default {
 
   .jumbotron  {
      zoom:inherit;
-     height: 15em;
+     height: 18em;
 
   }
 }

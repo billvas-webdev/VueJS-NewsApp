@@ -23,10 +23,10 @@
             <li><a href="https://www.facebook.com/facebook" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i>&nbsp; &nbsp; &nbsp; &nbsp;Facebook</a></li>
             <li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>&nbsp; &nbsp; Twitter</a></li>
             <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i>&nbsp; &nbsp; Instagram</a></li>
-            <li role="separator" class="divider"></li>
+            <!--<li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">One more separated link</a></li>-->
           </ul>
         </li>
       </ul>
@@ -38,7 +38,7 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
 
-
+        <!--<li><a href="@/components/Login">Login</a></li>-->
 
         <li class="dropdown">
 
@@ -71,7 +71,7 @@
 .navbar{
   font-size: 1.15em;
   font-family: 'Lato', arial, sans-serif;
-  margin-bottom: .75em;
+  margin-bottom: 4px;
   border-top: 1px solid #f8b500;
   border-radius: .5em;
 }

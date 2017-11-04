@@ -24,7 +24,7 @@ import WeatherWidget from './components/WeatherWidget'
 import SourceSelection from './components/SourceSelection'
 import Newslist from './components/Newslist'
 import FootComp from './components/FootComp'
-
+import About from './components/About'
 
 
 
@@ -36,6 +36,7 @@ export default {
     Newslist,
     HeadNav,
     FootComp,
+    About
 
 
 
@@ -72,10 +73,10 @@ export default {
 
   }
   #app {
-    padding: 10px 0 10px 0;
+    padding: 1px 0 1px 0;
   }
   .jumbotron{
-    margin-bottom: 7px;
+    margin-bottom: 3px;
   }
 .container .jumbotron{
   height: 30em;

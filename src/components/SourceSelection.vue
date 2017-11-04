@@ -80,7 +80,7 @@ created: function () {
   }
   h6{
     line-height: 1em;
-    margin-top: .5em;
+
     font-weight: 600;
     color:#072137;
     font-size: 1rem;
