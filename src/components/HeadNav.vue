@@ -38,7 +38,7 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
 
-        <li><a href="@/components/Login">Login</a></li>
+
 
         <li class="dropdown">
 
@@ -101,9 +101,6 @@
   color: red;
 }
 
-a{
-
-}
 .form {
   border-radius: .25em;
 }

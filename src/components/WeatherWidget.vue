@@ -34,9 +34,8 @@ export default {
   }
 </script>
 <style scoped>
-  .fe_container{
-    color:#163761;
-  }
+
+
   .jumbotron {
 
     color:#163761;

@@ -3,7 +3,7 @@
     <div class="jumbotron">
 
   <h2><span class="fa fa-newspaper-o"></span>Daily News</h2>
-    <h4>Select News Source</h4>
+    <h4>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Select News Source</h4>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <select class="form-control" v-on:change="sourceChanged">
@@ -71,7 +71,7 @@ created: function () {
     font-size: 3.5rem;
 }
   h4{
-    position: relative;
+
 
     text-shadow: 1px .5px 0 #f8b500;
     color:#072137;
