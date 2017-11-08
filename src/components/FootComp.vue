@@ -1,4 +1,6 @@
 <template>
+<transition name="lightSpeedIn">
+  <div class="animated lightSpeedIn">
 
  <!-- ******FOOTER****** -->
     <footer class="footer">
@@ -23,9 +25,9 @@
     <a slot="item_2" class="fa fa-instagram fa-lg"></a>
     <a slot="item_3" class="fa fa-facebook fa-lg"></a>
     <a slot="item_4" class="fa fa-envelope fa-lg"></a>
-  </circle-menu>
-  </div>-->
-
+  </circle-menu>-->
+  </div>
+</transition>
 </template>
 <script>
 import CircleMenu from 'vue-circle-menu'

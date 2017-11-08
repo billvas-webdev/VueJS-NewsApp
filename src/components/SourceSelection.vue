@@ -1,4 +1,6 @@
 <template>
+<transition name="fadeInDownBig">
+  <div class="animated fadeInDownBig">
   <div class ="sourceselection">
     <div class="jumbotron">
 
@@ -15,6 +17,8 @@
     </div>
   </div>
   </div>
+  </div>
+</transition>
 </template>
 
 <script>
