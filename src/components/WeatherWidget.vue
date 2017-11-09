@@ -1,6 +1,5 @@
 <template>
-<transition name="fadeInDownBig">
-   <div class="animated fadeInDownBig">
+
 <div class="jumbotron">
     <weather
         api-key="a1a5357a4bc875aba578cf0eec58ab94"
@@ -14,8 +13,8 @@
 
     </weather>
 </div>
-</div>
- </transition>
+
+
 </template>
 
 <script>
