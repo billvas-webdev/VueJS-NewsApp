@@ -10,13 +10,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Daily News and Weather</a>
+      <a class="navbar-brand" href="http://billvas.com/VueJS-NewsApp/">Daily News and Weather</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About<span class="sr-only">(current)</span></a></li>
         <li><a href="#">Contact</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media<span class="caret"></span></a>
@@ -31,12 +31,12 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left">
+     <!-- <form class="navbar-form navbar-left">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      </form>-->
       <ul class="nav navbar-nav navbar-right">
 
         <!--<li><a href="@/components/Login">Login</a></li>-->
@@ -71,7 +71,15 @@
 </script>
 
 <style scoped>
+.navbar-nav>li>a{
+  color:#9cd1ff;
+
+}
+ .navbar-brand {
+    color: #9cd1ff;
+}
 .navbar{
+
   font-size: 1.15em;
   font-family: 'Lato', arial, sans-serif;
   margin-bottom: 4px;
@@ -136,7 +144,7 @@
   }
 
 		.formcontrol:focus {
-		  z-index: 2;
+		  z-index: 1;
 		}
 
 
