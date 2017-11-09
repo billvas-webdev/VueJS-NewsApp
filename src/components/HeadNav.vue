@@ -1,6 +1,5 @@
 <template>
-<transition name="lightSpeedIn">
-  <div class="animated lightSpeedIn">
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -65,8 +64,8 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
- </div>
-</transition>
+
+
 </template>
 <script>
 </script>

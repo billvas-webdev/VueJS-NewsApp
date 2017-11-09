@@ -1,6 +1,5 @@
 <template>
-<transition name="fadeInDownBig">
-  <div class="animated fadeInDownBig">
+
   <div class ="sourceselection">
     <div class="jumbotron">
 
@@ -18,7 +17,7 @@
   </div>
   </div>
   </div>
-</transition>
+
 </template>
 
 <script>
@@ -116,6 +115,7 @@ created: function () {
   font-size: 1.5rem;
   font-weight: bold;
   height: 2em;
+  background-color: #fff;
 }
 
   .fa-newspaper-o {

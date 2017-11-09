@@ -3,7 +3,8 @@
   <transition name="zoomIn">
           <div v-if="show"></div>
         </transition>-->
-
+<transition name="fadeInDownBig">
+  <div class="animated fadeInDownBig">
   <div class="container" id="app">
 
     <HeadNav></HeadNav>
@@ -14,8 +15,8 @@
 
 
   </div>
-
-
+</div>
+</transition>
 </template>
 <script>
 
@@ -31,10 +32,10 @@ import About from './components/About'
 export default {
   name: 'app',
   components: {
+    HeadNav,
     WeatherWidget,
     SourceSelection,
     Newslist,
-    HeadNav,
     FootComp,
     About
 
@@ -56,7 +57,10 @@ export default {
 </script>
 <style>
 
-
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
   body {
 
     font-family: 'Lato', arial, sans-serif;
