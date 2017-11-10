@@ -3,20 +3,18 @@
   <transition name="zoomIn">
           <div v-if="show"></div>
         </transition>-->
-<transition name="fadeInDownBig">
-  <div class="animated fadeInDownBig">
-  <div class="container" id="app">
+  <transition name="fadeInDownBig">
+    <div class="animated fadeInDownBig">
+      <div class="container" id="app">
 
-    <HeadNav></HeadNav>
-    <WeatherWidget></WeatherWidget>
-    <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
-    <Newslist v-bind:source="source"></Newslist>
-    <FootComp></FootComp>
-
-
-  </div>
-</div>
-</transition>
+        <HeadNav></HeadNav>
+        <WeatherWidget></WeatherWidget>
+        <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
+        <Newslist v-bind:source="source"></Newslist>
+        <FootComp></FootComp>
+      </div>
+    </div>
+  </transition>
 </template>
 <script>
 
@@ -82,9 +80,7 @@ export default {
   .jumbotron{
     margin-bottom: 3px;
   }
-.container .jumbotron{
-  height: 30em;
-}
+
 
   @media (max-width: 1200px){
 

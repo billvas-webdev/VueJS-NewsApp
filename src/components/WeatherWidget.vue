@@ -3,7 +3,7 @@
 <div class="jumbotron">
     <weather
         api-key="a1a5357a4bc875aba578cf0eec58ab94"
-        title="Weather Forecast"
+        title="Local Weather Forecast"
         latitude="47.671081"
         longitude="-122.326071"
         language="en"

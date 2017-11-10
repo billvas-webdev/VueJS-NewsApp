@@ -4,7 +4,7 @@
     <div class="jumbotron">
 
   <h2><span class="fa fa-newspaper-o"></span>Daily News</h2>
-    <h4>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Select News Source</h4>
+    <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Select News Source</h4>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <select class="form-control" v-on:change="sourceChanged">
@@ -55,18 +55,19 @@ created: function () {
   .jumbotron {
     padding:1em;
     zoom: 175%;
-    height: 16.5em;
+    height: 16.8em;
     border-top: 1px solid #f8b500;
     border-radius: .5em;
     /*background-color: #3491e4;*/
-    font-family: 'Montserrat'
-    , arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     background: #F0F2F0;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #1576cc, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #1576cc, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
   h2{
+
     text-shadow: 1px .5px 0 #f8b500;
     color:#072137;
     text-align: center;
@@ -74,31 +75,33 @@ created: function () {
     font-size: 3.5rem;
 }
   h4{
-
-
     text-shadow: 1px .5px 0 #f8b500;
     color:#072137;
     text-align: center;
     font-size: 2rem;
+    margin-top: -7px;
+    margin-bottom: 5px;
   }
   h6{
-    line-height: 1em;
+    line-height: 1.1em;
 
     font-weight: 600;
     color:#072137;
-    font-size: 1rem;
-    padding: .5em 0 .25em 0;
+    font-size: 1.05rem;
+    padding:  0;
+    margin-top: 7px;
+    margin-bottom: 4px;
 
   }
   .btn-primary{
     display:block; /* change this from inline-block */
-    width:50%; /* setting the width */
-    margin:.15em auto; /* this will center  it */
+    width:55%; /* setting the width */
+    margin:0 auto; /* this will center  it */
 
     font-style:normal;
-    font-weight:bold;
+    font-weight:normal;
     font-family: 'Montserrat','Lato', arial, sans-serif;
-    font-size:1.25em;
+    font-size:1.1em;
     outline:#f8b500;
     color:#fff;
     border:none;

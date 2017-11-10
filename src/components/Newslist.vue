@@ -56,10 +56,10 @@ export default {
 
 
   .media-object {
-    max-width: 20em;
+    max-width: 18em;
     border-radius: 2em;
-    max-height: 15em;
-    padding: 20px;
+    max-height: 16em;
+    padding: 1em;
   }
   .media {
     border-top: 1px solid #f8b500;
@@ -72,16 +72,17 @@ export default {
     background: -webkit-linear-gradient(to top, #201f23, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #201f23, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: .5em;
-    width: 100%;
+    width: auto;
   }
 
   .newslist {
 
     color:azure;
-    font-size: 2.3rem;
+    font-size: 2.25rem;
   }
   a {
     color:#299cff;
+
 
   }
   p{
@@ -93,8 +94,8 @@ export default {
 }
   h4 {
     line-height: 1em;
-    font-size: 1.4em;
-    padding-top: 46px;
+    font-size: 1.35em;
+    padding-top: 1em;
   }
   h5 {
     line-height: 1.5em;
