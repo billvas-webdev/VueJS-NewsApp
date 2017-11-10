@@ -55,7 +55,7 @@ created: function () {
   .jumbotron {
     padding:1em;
     zoom: 175%;
-    height: 16.8em;
+    height: 15.75em;
     border-top: 1px solid #f8b500;
     border-radius: .5em;
     /*background-color: #3491e4;*/
@@ -67,7 +67,8 @@ created: function () {
 }
 
   h2{
-
+    margin-top: 3px;
+    margin-bottom: 10px;
     text-shadow: 1px .5px 0 #f8b500;
     color:#072137;
     text-align: center;
