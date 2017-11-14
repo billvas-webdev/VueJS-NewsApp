@@ -4,8 +4,8 @@
             <div class="primary col-md-8 col-sm-12 col-xs-12">
                 <section class="about section">
                     <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content"><p>I’m a front end web developer experienced in developing static and dynamic web projects. Knowledgeable in front-end technology as well as the principles and techniques of website development and maintenance. Adept at conveying complex technical information to a variety of professional and lay audiences in a clear and understandable manner. Seeking employment as a front-end web developer in the Seattle area.
+                        <h2 class="heading">About Daily News and Weather</h2>
+                        <div class="content"><p>This project is a responsive web application that leverages Vue JS, Vue Resource, Node JS, News API, Dark Ski API, Bootstrap, JQuery, and Google Analytics. Hosted on a secure network to allow for geolocation for local weather updates. It also provides up to the minute news content from over 50 news sources and access to the news organization's websites.
                         </p>
                     </div><!--//content-->
                     </div><!--//section-inner-->

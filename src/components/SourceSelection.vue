@@ -42,7 +42,7 @@
   },
 
 created: function () {
-  this.$http.get('https://newsapi.org/v1/sources?language=en')
+  this.$http.get("https://newsapi.org/v1/sources?language=en")
       .then(response => {
         this.sources = response.data.sources;
       });
@@ -61,7 +61,7 @@ created: function () {
     /*background-color: #3491e4;*/
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    background: #F0F2F0;  /* fallback for old browsers */
+    background: #fff1e5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #1576cc, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #1576cc, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
