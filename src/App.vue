@@ -47,7 +47,7 @@ export default {
 
 
 
-    background-size: cover;
+
 
 
   }
@@ -59,71 +59,5 @@ export default {
   }
 
 
-  @media (max-width: 1200px){
 
-  .container {
-
-    width: 90em;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
-@media (max-width: 1024px){
-.container {
-    width: auto;
-  }
-}
-
-
-@media (max-width: 992px){
-
-  .container {
-    width: auto;
-  }
-}
-@media (max-width: 768px){
-
-  .container {
-    width: auto;
-    zoom: 60%;
-  }
-
-
-
-  .media-object {
-    zoom: 100%;
-    height: 23rem;
-  }
-  a {
-    font-size: 2.5rem;
-  }
-
-}
-
-@media (max-width: 375px){
-
-  .media-object {
-
-    width: auto;
-
-  }
-  a{
-    font-size: 1em;
-  }
-  i{
-    font-size: 1em;
-  }
-   p{
-
-    font-size: 30em;
-  }
-
-
-
-  .container {
-    width: auto;
-    zoom: 30%;
-  }
-
-}
 </style>

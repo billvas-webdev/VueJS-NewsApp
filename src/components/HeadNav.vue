@@ -1,5 +1,4 @@
 <template>
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,23 +41,12 @@
       <ul class="nav navbar-nav navbar-right">
 
         <!--<li><a href="@/components/Login">Login</a></li>-->
+ <li><router-link to="/">Home<span class="sr-only">(current)</span></router-link></li>
 
-        <li class="dropdown">
 
 
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <div class="wrapper">
-    <form class="form-signin">
-      <h2 class="form-signin-heading">Please login</h2>
-      <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
-      <label class="checkbox">
-        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-      </label>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-    </form>
-  </div>
+
+
 
           </ul>
         </li>
