@@ -22,7 +22,7 @@
 
 <script>
   export default {
-    name: 'sourceselection',
+    name: 'SourceSelection',
     data () {
       return {
         sources: [],

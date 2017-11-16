@@ -11,19 +11,10 @@
        </div><!--//container-->
   </footer><!--//footer-->
 
-
-
-
-
-
-
 </template>
 <script>
-
-export default {
-  components: {
-
-  }
+  export default {
+    name: 'FootComp'
 }
 </script>
 <style scoped>

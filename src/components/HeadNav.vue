@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://billvas.com/VueJS-NewsApp/">Daily News and Weather</a>
+      <router-link class="navbar-brand" to="/">Daily News and Weather</router-link>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,6 +70,9 @@
 
 </template>
 <script>
+ export default {
+    name: 'HeadNav'
+}
 </script>
 
 <style scoped>

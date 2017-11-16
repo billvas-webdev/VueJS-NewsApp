@@ -1,55 +1,32 @@
 <template>
-<!--<div class="animated zoomIn">
-  <transition name="zoomIn">
-          <div v-if="show"></div>
-        </transition>-->
   <transition name="fadeInDownBig">
     <div class="animated fadeInDownBig">
       <div class="container" id="app">
 
         <HeadNav></HeadNav>
-        <WeatherWidget></WeatherWidget>
-        <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
-        <Newslist v-bind:source="source"></Newslist>
-        <FootComp></FootComp>
+        <router-view/>
+
       </div>
     </div>
   </transition>
 </template>
 <script>
 
-import HeadNav from './components/HeadNav'
-import WeatherWidget from './components/WeatherWidget'
-import SourceSelection from './components/SourceSelection'
-import Newslist from './components/Newslist'
-import FootComp from './components/FootComp'
-import About from './components/About'
+import HeadNav from '@/components/HeadNav'
+
 
 
 
 export default {
   name: 'app',
   components: {
-    HeadNav,
-    WeatherWidget,
-    SourceSelection,
-    Newslist,
-    FootComp,
-    About
+    HeadNav:HeadNav
 
 
 
 
-  },
-  data () {
-    return {
-      source: ""
-    }
-  },
-  methods: {
-    sourceChanged: function (source) {
-      this.source = source;
-    }
+
+
   }
 }
 </script>

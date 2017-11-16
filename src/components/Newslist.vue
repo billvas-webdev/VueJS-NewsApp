@@ -25,7 +25,7 @@
 </template>
 <script>
 export default {
-  name: 'newslist',
+  name: 'Newslist',
   props: ['source'],
   data () {
     return {
