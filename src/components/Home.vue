@@ -26,6 +26,7 @@ export default {
     FootComp,
 
 
+
     },
   data () {
     return {
@@ -67,6 +68,7 @@ export default {
   .container {
     width: auto;
   }
+
 }
 @media (max-width: 768px){
 

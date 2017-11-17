@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import About from '@/components/About'
+import Contact from '@/components/Contact'
 
 
 
@@ -19,6 +20,12 @@ export default new Router({
       path: '/About',
       name: 'About',
       component: About
+    },
+
+    {
+      path: '/Contact',
+      name: 'Contact',
+      component: Contact
     }
 
   ]
