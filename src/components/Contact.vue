@@ -5,21 +5,36 @@
         <!--<img src="../assets/weather.png" class="img-responsive" id="weather-icon" height= "165" width= "155" alt="Cloud image">
          <img src="../assets/news.png" class="img-responsive" id="news-icon" height= "135" width= "130" alt="Cloud image">-->
         <h1>Contact</h1>
-        </div>
 
-            <div class="content"><p>If you like are interested in contacting me about other web projects, Id love to hear from you!!!
 
+            <div class="content"><p>If you are interested in contacting me about other web projects, Id love to hear from you!!!
+               <img src="../assets/seattle.png" class="img-responsive" id="seattle-img"  alt="Seattle Skyline">
                 </p>
-            </div><!--//container-->
+
+<foot-comp></foot-comp>
           </div><!--//content-->
         </div><!--//bootstrap sizing-->
+
+
+
+
+</div> <!--//container-->
+ </div>
+ </footer>
+
+
 
 </template>
 
 <script>
+import FootComp from '@/components/FootComp'
+
   export default {
-    name: 'Contact'
+    name: 'Contact',
+    components: {
+      FootComp
 }
+  }
 
 </script>
 
@@ -31,7 +46,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 h1{
   text-align: center;
@@ -62,11 +77,20 @@ p{
   /*-webkit-filter: invert(80%);
   filter: invert(80%);
 
-}
-#news-icon{
-  -webkit-filter: invert(20%);
-  filter: invert(20%);
-  float: right;
 }*/
+#seattle-img{
+  -webkit-filter: invert(20%);
+  filter: invert(12%);
+  position: relative;
+  margin: 0 auto;
+
+}
+footer{
+  margin-right: 0em;
+width: auto;
+}
+.container .text-center{
+  height: 1em;
+}
 
 </style>

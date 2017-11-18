@@ -8,11 +8,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <select class="form-control" v-on:change="sourceChanged">
-    <option v-bind:value="source.id" v-for="source in sources">{{source.name}}</option>
+    <option v-bind:value="source.id" v-for="source in sources" v-touch-ripple>{{source.name}}</option>
     </select>
     <div v-if="source">
       <h6>{{source.description}}</h6>
-      <a v-bind:href="source.url" class="btn btn-lg btn-primary btn-block" target="blank">Go To {{source.name}} Website</a>
+      <a v-bind:href="source.url" class="btn btn-lg btn-primary btn-block" target="blank" v-touch-ripple>Go To {{source.name}} Website</a>
     </div>
   </div>
   </div>
@@ -21,8 +21,11 @@
 </template>
 
 <script>
+import { touchRipple } from 'vue-touch-ripple'
+
   export default {
     name: 'SourceSelection',
+    components:'touchRipple',
     data () {
       return {
         sources: [],
@@ -54,7 +57,7 @@ created: function () {
 <style scoped>
   .jumbotron {
     padding:1em;
-    zoom: 175%;
+    zoom: 155%;
     height: 15.75em;
     border-top: 1px solid #f8b500;
     border-radius: .5em;

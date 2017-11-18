@@ -42,8 +42,8 @@ export default {
   .jumbotron {
 
     color:#163761;
-    height: 20em;
-    zoom: 155%;
+    height: 18em;
+    zoom: 143%;
     padding: 1em;
     border-top: 1px solid #f8b500;
     border-radius: .5em;

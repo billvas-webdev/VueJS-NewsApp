@@ -10,6 +10,7 @@ import VueResource from 'vue-resource';
 Vue.config.productionTip = false;
 
 Vue.use(VueResource);
+import VueTouchRipple from 'vue-touch-ripple'
 
 
 
