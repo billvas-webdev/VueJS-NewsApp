@@ -4,14 +4,11 @@
       <div class="primary col-md-12 col-sm-12 col-xs-12">
         <img src="../assets/news.png" class="img-responsive" id="news-icon" height= "130" width= "127" alt="Newspaper image">
          <img src="../assets/weather.png" class="img-responsive" id="weather-icon" height= "165" width= "155" alt="Cloud image">
-        <h1>Daily News and Weather</h1>
-
-
-            <div class="content"><p>This project is a responsive web application that leverages Vue JS, Vue Resource, Node JS, News API, Dark Ski API, Bootstrap, JQuery, and Google Analytics. Hosted on a secure network to allow for geolocation for local weather updates. It also provides up to the minute news content from over 50 news sources and access to the news organization's websites.
-                </p>
-            </div><!--//container-->
-          </div><!--//content-->
-        </div><!--//bootstrap sizing-->
+        <h1>Daily News and Weather</h1></br>
+      </div><!--//container-->
+        <div class="content"><p>This project is a responsive web application that leverages Vue JS, Vue Resource, Node JS, News API, Dark Ski API, Bootstrap, JQuery, and Google Analytics. Hosted on a secure network to allow for geolocation for local weather updates. It also provides up to the minute news content from over 50 news sources and access to the news organization's websites.</p>
+        </div><!--//content-->
+      </div><!--//bootstrap sizing-->
 
 </template>
 
@@ -24,31 +21,31 @@
 
 <style scoped>
 /* ======= Base ======= */
-body {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-h1{
-  text-align: center;
 
-  text-shadow: -1px .25px 0 #FFFFFF;
+h1{
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight:bolder;
+  font-family: 'Avenir','Lato', arial, sans-serif;
+  color: #2c3e50;
+  text-align: center;
+  text-shadow: -.5px .5px 0 #FFFFFF;
 
 }
 p{
+  font-size: 2rem;
+  color:#072137;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  font-weight:900 ;
-  /*text-shadow: -1px .25px 0 #FFFFFF;*/
+  font-weight:700 ;
+   text-shadow: -0.5px .25px 0 #FFFFFF;
+  /*text-shadow: -1px .5px 0 #FFFFFF;*/
 }
 .container{
 
   text-align:center;
     height: 20em;
     width: auto;
-    padding: 2.5em 9.5em 1em 9.5em;
+    padding: 2em 9em 1em 9em;
     border-top: 1px solid #f8b500;
     border-radius: .5em;
     /*background-color: #3491e4;*/
@@ -56,11 +53,11 @@ p{
     font-weight: bolder;
     font-size: 1.35em;
     background: #fff1e5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #1576cc, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #1576cc, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #f8b500, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f8b500, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     animation: colorchange 5s; /* animation-name followed by duration in seconds*/
         /* you could also use milliseconds (ms) or something like 2.5s */
-    -webkit-animation: colorchange 5s; /* Chrome and Safari */
+    -webkit-animation: colorchange 10s; /* Chrome and Safari */
     }
     @keyframes colorchange
     {
@@ -68,28 +65,29 @@ p{
       25%  {background: #f8b500;}
       50%  {background: orange;}
       75%  {background: lightcoral;}
-      100% {background: lightgrey;}
+      100% {background: plum;}
     }
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
-       0%   {background: lightgoldenrodyellow;}
+       0%  {background: lightgoldenrodyellow;}
       25%  {background: #f8b500;}
       50%  {background: orange;}
       75%  {background: lightcoral;}
-      100% {background: lightgrey;}
+      100% {background: plum;}
     }
 
 #weather-icon{
   float:right;
 
-  /*-webkit-filter: invert(80%);
-  filter: invert(80%);*/
+  -webkit-filter: invert(70%);
+  filter: invert(2%);
 
 }
 #news-icon{
-  -webkit-filter: invert(20%);
+  -webkit-filter: invert(80%);
   filter: invert(20%);
+
 
   float: left;
 }

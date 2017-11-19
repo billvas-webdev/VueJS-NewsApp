@@ -12,7 +12,7 @@
     </select>
     <div v-if="source">
       <h6>{{source.description}}</h6>
-      <a v-bind:href="source.url" class="btn btn-lg btn-primary btn-block" target="blank" v-touch-ripple>Go To {{source.name}} Website</a>
+      <a v-bind:href="source.url" class="btn btn-lg btn-primary btn-block" target="blank">Go To {{source.name}} Website</a>
     </div>
   </div>
   </div>
@@ -97,6 +97,7 @@ created: function () {
     margin-bottom: 4px;
 
   }
+
   .btn-primary{
     display:block; /* change this from inline-block */
     width:55%; /* setting the width */
@@ -114,7 +115,20 @@ created: function () {
     border-radius:.5em;
     background-color:#072137;
     border:1px solid #f8b500;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+
   }
+  .btn-primary:hover {
+  background:#1576cc;
+  color: #072137;
+
+}
+.btn-primary:focus {
+  text-decoration: none;
+}
 
   select.form-control {
   color:#2b3b50;

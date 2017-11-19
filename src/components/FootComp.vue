@@ -26,7 +26,7 @@
 /* ======= Footer =======*/
 .footer {
   background: #204d8a;
-  color: #fff;
+  color: #f8b500;
   margin-top: -.35em;
   padding: .65em 0;
   border-top: 1px solid #f8b500;
@@ -39,13 +39,13 @@
   font-size: 14px;
 }
 .footer a {
-  color: #a1aab4;
+  color: #f8b500;
 }
 .footer a:hover{
-  color:#fff;
+  color:orangered;
 }
 .footer .fa-newspaper-o {
-  color: #f8b500;
+  color: orangered;
   position: relative;
   top:.2rem;
 }
@@ -53,6 +53,7 @@
   font-size:1.45em
 
 }
+
 </style>
 
 

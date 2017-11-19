@@ -53,7 +53,22 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+a {
+   color:#299cff;
 
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #ffadad;
+
+}
+a:focus {
+  text-decoration: none;
+}
 
   .media-object {
     max-width: 18em;
@@ -67,24 +82,25 @@ export default {
   }
 
   li.media{
+
     background-color: #131313;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #201f23, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #201f23, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: .5em;
     width: auto;
+
   }
 
   .newslist {
-
+    -webkit-transition: all 1.4s ease-in-out;
+  -moz-transition: all 1.4s ease-in-out;
+  -ms-transition: all 1.4s ease-in-out;
+  -o-transition: all 1.4s ease-in-out;
     color:azure;
     font-size: 2.25rem;
   }
-  a {
-    color:#299cff;
 
-
-  }
   p{
     line-height: 1.25em;
     padding-right: 1.5em;

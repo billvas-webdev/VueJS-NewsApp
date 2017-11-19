@@ -19,7 +19,7 @@
 
 
         <li><router-link to="/contact">Contact<span class="sr-only">(current)</span></router-link></li>
-        <li class="dropdown">
+        <!--<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="https://www.facebook.com/facebook" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i>&nbsp; &nbsp; &nbsp; &nbsp;Facebook</a></li>
@@ -28,8 +28,8 @@
             <!--<li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>-->
-          </ul>
+            <li><a href="#">One more separated link</a></li>
+          </ul>-->
         </li>
       </ul>
      <!-- <form class="navbar-form navbar-left">
@@ -66,11 +66,32 @@
 <style scoped>
 .navbar-nav>li>a{
   color:#9cd1ff;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+.navbar-nav>li>a:hover {
+
+  color: #f8b500;
 
 }
- .navbar-brand {
-    color: #9cd1ff;
+ .navbar-nav>li>a:focus {
+  text-decoration: none;
 }
+ .navbar-brand {
+  color: #9cd1ff;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+.navbar-brand:hover {
+  color: #f8b500;
+
+}
+
 .navbar{
 
   font-size: 1.15em;

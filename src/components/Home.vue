@@ -47,6 +47,8 @@ export default {
    padding:0;
 
   }
+
+
    @media (max-width: 1200px){
 
   .container {
