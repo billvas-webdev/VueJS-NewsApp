@@ -91,6 +91,7 @@ p{
   text-shadow: -.5px .5px 0 #FFFFFF;
 }
 h1{
+  margin-top: 0em;
   font-size: 5rem;
   text-transform: uppercase;
   font-weight: bolder;

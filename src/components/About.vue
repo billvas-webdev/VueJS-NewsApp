@@ -23,17 +23,18 @@
 /* ======= Base ======= */
 
 h1{
+  margin-top: 1rem;
   font-size: 5rem;
   text-transform: uppercase;
   font-weight:bolder;
   font-family: 'Avenir','Lato', arial, sans-serif;
-  color: #2c3e50;
+
   text-align: center;
   text-shadow: -.5px .5px 0 #FFFFFF;
 
 }
 p{
-  font-size: 2rem;
+  font-size: 2.25rem;
   color:#072137;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight:700 ;
