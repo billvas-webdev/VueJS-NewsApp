@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <router-link class="navbar-brand" to="/">Daily News and Weather</router-link>
+      <router-link class="navbar-brand" to="/"><i class="fa fa-home" aria-hidden="true"></i> Daily News and Weather</router-link>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,7 +41,7 @@
       <ul class="nav navbar-nav navbar-right">
 
         <!--<li><a href="@/components/Login">Login</a></li>-->
- <li><router-link to="/">Home<span class="sr-only">(current)</span></router-link></li>
+ <!--<li><router-link to="/"><i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span></router-link></li>-->
 
 
 
@@ -94,7 +94,7 @@
 
 .navbar{
 
-  font-size: 1.15em;
+  font-size: 1.25em;
   font-family: 'Lato', arial, sans-serif;
   margin-bottom: 4px;
   border-top: 1px solid #f8b500;

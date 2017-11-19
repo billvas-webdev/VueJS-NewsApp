@@ -82,7 +82,7 @@ h1{
 }
 
 a.btn-cta-primary {
-  width: 19rem;
+  width: 19.4rem;
   height: 4.5rem;
   border-radius: .95rem;
   background: #273241;
