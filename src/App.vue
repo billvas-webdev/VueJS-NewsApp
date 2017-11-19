@@ -45,12 +45,31 @@ export default {
     /*background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     /*background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+     -webkit-animation: colorchange 7s; /* Chrome and Safari */
+    }
+    @keyframes colorchange
+    {
+      0%   {background: #299cff;}
+      50%  {background: #082542;}
+
+      100%  {background: #082542;}
+
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #299cff;}
+      50%  {background: #082542;}
+
+      100%  {background: #082542;}
+
+    }
 
 
 
 
 
-  }
+
   #app {
     padding: 1px 0 1px 0;
   }
