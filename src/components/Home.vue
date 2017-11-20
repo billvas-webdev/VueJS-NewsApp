@@ -99,7 +99,7 @@ body {
   }
 
 }
-@media (max-width: 768px){
+/*@media (max-width: 768px){
 
   .container {
     width: auto;
@@ -116,9 +116,9 @@ body {
     font-size: 2.5rem;
   }
 
-}
+}*/
 
-@media (max-width: 375px){
+/*@media (max-width: 375px){
 
   .media-object {
 
@@ -167,8 +167,8 @@ body {
   }
 
 
-}
-@media only screen and (max-width: 768px) and (min-width: 320px){
+}*/
+@media only screen and (max-width: 360px) and (min-width: 320px){
 
 
     .container {
@@ -177,6 +177,7 @@ body {
 
 
   }
+
   .media-object {
 
     width: auto;

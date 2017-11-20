@@ -151,11 +151,11 @@ created: function () {
 
 
 /******* IPHONE 6 ********/
-@media (max-width: 375px){
+@media only screen and (max-width: 360px) and (min-width: 320px){
 
   .jumbotron  {
 
-     height: 16em;
+     height: 18em;
 
   }
 
@@ -165,37 +165,26 @@ created: function () {
   .fa-newspaper-o {
     font-size: 1.75em;
 }
+.btn-primary{
+    width:72%;
+}
 
 }
 /***********   *************/
-@media (max-width: 414px){
-  .btn-primary{
 
-    width:70%; /* setting the width */
-  }
-}
 
 
 /*********** IPHONE 6 Landscape **********/
-@media (max-width: 667px){
+@media only screen and (max-width: 735) and (min-width: 640){
 
-   .jumbotron  {
+   .jumbotron{
 
      height: 17em;
-
+      zoom:100%;
   }
 }
 /********** IPHONE PLUS Landscape **********/
-@media (max-width: 736px){
-
-   .jumbotron  {
-
-     height: 17em;
-
-  }
-}
-/******** TABLET IPAD LG ********/
-@media (max-width: 768px){
+@media only screen and (max-width: 768) and (min-width: 736px){
 
    .jumbotron  {
 
@@ -205,16 +194,19 @@ created: function () {
   h6{
     font-size: 1em;
   }
+
 }
+/******** TABLET IPAD LG ********/
+
 /******* IPAD Pro ********/
-@media (max-width: 1024px){
+/*@media (max-width: 1024px){
 
    .jumbotron  {
 
      height: 17em;
 
   }
-}
+}*/
 
 
   </style>

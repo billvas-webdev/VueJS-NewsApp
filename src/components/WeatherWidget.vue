@@ -51,18 +51,18 @@ export default {
     background: -webkit-linear-gradient(to top, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-@media (max-width: 360px){
+@media (max-width: 412px){
 
   .jumbotron  {
-     zoom:inherit;
+     zoom:150%;
      height: 18em;
 
   }
 }
+@media only screen and (max-width: 732px) and (min-width: 640px){
 
-@media (max-width: 414px){
   .jumbotron {
-    zoom: 155%;
+    zoom: 100%;
   }
 }
 
