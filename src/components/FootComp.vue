@@ -54,6 +54,15 @@
 
 }
 
+@media only screen and (max-width: 360px) and (min-width: 320px){
+
+  .footer .fa-newspaper-o {
+  position: relative;
+  top:0rem;
+  }
+}
+
+
 </style>
 
 

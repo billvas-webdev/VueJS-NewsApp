@@ -93,11 +93,13 @@ p{
   float: left;
 }
 
+
+
 /******* IPHONE 6 ********/
 @media (max-width: 375px){
 
   .container  {
-    padding: 0.5em 0.5em 1em 0.5em;
+    padding: .5em 0.5em 1em 0.5em;
 
 
   }
@@ -106,9 +108,8 @@ p{
 @media (max-width: 414px){
   .container  {
     padding: 0.5em 0.5em 1em 0.5em;
-
-
-  }
+    height:40em;
+}
 }
 
 /*********** IPHONE 6 Landscape **********/
@@ -116,9 +117,15 @@ p{
 
   .container  {
     padding: 0.5em 0.5em 1em 0.5em;
-
-
-  }
+    height:23em;
+}
+h1{
+  font-size: 2em;
+}
+.img-responsive{
+  height: 5em;
+  width: 5em;
+}
 }
 /********** IPHONE PLUS Landscape **********/
 @media (max-width: 736px){
@@ -147,5 +154,70 @@ p{
 
   }
 }
+
+@media only screen and (max-width: 414px) and (min-width: 360px){
+
+  .container  {
+    padding: 1rem 1rem 0rem 1rem ;
+    height: 44rem;
+}
+  h1{
+    font-size: 2.6rem;
+    margin-bottom: -1rem;
+    margin-top:0rem;
+  }
+  .img-responsive{
+  height: 5.8rem;
+  width: 5.8rem;
+}
+  p{
+    font-size:2.05rem;
+     padding-top:0rem;
+  }
+
+}
+@media only screen and (max-width: 360px) and (min-width: 320px){
+
+  .container  {
+    padding: 1rem 1rem 0rem 1rem ;
+    height: 40rem;
+}
+  h1{
+    font-size: 2.4rem;
+    margin-bottom: -1rem;
+    margin-top:0.35rem;
+  }
+  .img-responsive{
+  height: 5.8rem;
+  width: 5.8rem;
+}
+  p{
+    font-size:2rem;
+     padding-top:0rem;
+  }
+
+}
+@media only screen and (max-width: 768px) and (min-width: 568px){
+
+  .container  {
+    padding: 1rem 10rem 0rem 10rem ;
+    height: 42rem;
+}
+  h1{
+    font-size: 2.7rem;
+    margin-bottom: -1rem;
+    margin-top:1rem;
+  }
+  .img-responsive{
+  height: 7.5rem;
+  width: 7.5rem;
+}
+  p{
+    font-size:2rem;
+     padding-top:0rem;
+  }
+
+}
+
 
 </style>

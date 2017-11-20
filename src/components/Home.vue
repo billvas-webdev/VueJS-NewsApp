@@ -168,6 +168,31 @@ body {
 
 
 }
+@media only screen and (max-width: 768px) and (min-width: 320px){
+
+
+    .container {
+      zoom: 50%;
+    width: auto;
+
+
+  }
+  .media-object {
+
+    width: auto;
+
+  }
+  a{
+    font-size: 2em;
+  }
+  i{
+    font-size: 1em;
+  }
+   p{
+
+    font-size: 3em;
+  }
+}
 
 
 </style>

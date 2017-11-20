@@ -3,7 +3,7 @@
     <div class="container">
       <div class="primary col-md-12 col-sm-12 col-xs-12">
         <h1>Contact Me</h1>
-            <div class="content"><p>If you are interested in contacting me about other web projects, I'd love to hear from you!</p>
+            <div class="content"><p>If you are interested in connecting with me about other web projects, I'd love to hear from you!</p>
             <div class= "row">
                 <ul class="social list-inline">
                     <li><a href="https://www.facebook.com/facebook" data-toggle="tooltip" title="Visit me on Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -107,7 +107,7 @@ a.btn-cta-primary {
   height: 4.5rem;
   border-radius: .95rem;
   background: #273241;
-  border: .5px solid #f8b500;
+  border: 1.5px solid #263140;
   color: #9cd1ff;
   font-weight: 600;
   text-transform: uppercase;
@@ -116,7 +116,7 @@ a.btn-cta-primary {
 a {
   margin-top: 20px;
   background: #072137;
-  border: .5px solid #f8b500;
+  border: 1.5px solid #263140;
   width: 36px;
   height: 36px;
   display: inline-block;
@@ -193,10 +193,70 @@ background:#072137;
     }
 
 .fa {
-  margin-top:9px;
+  margin-top:8.5px;
 }
 
+@media only screen and (max-width: 412px) and (min-width: 360px){
 
+  .container  {
+    padding: 2.5em .5em .5em .5em ;
+    height: 44rem;
+}
+  h1{
+     margin-bottom: 0rem;
+    margin-top:-3rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 360px) and (min-width: 320px){
 
+  .container  {
+    padding: 1rem 1rem 0rem 1rem ;
+    height: 32rem;
+}
+  h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top:0rem;
+  }
+  .img-responsive{
+  height: 5.8rem;
+  width: 5.8rem;
+}
+  p{
+    font-size:2rem;
+
+  }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 568px){
+
+  .container  {
+    padding: 1rem 10rem 0rem 10rem ;
+    height: 28.5rem;
+}
+  h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top:0rem;
+  }
+  .img-responsive{
+  height: 5.8rem;
+  width: 5.8rem;
+}
+  p{
+    font-size:2rem;
+     padding-top:0rem;
+  }
+
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+
+  .container  {
+    padding: 1rem 10rem 0rem 10rem ;
+    height: 30.5rem;
+}
+}
 
 </style>

@@ -77,6 +77,18 @@ export default {
     margin-bottom: 3px;
   }
 
+  @media only screen and (max-width: 412px) and (min-width: 320px){
+
+  body  {
+    padding: 0 .35rem 0rem .35rem;
+
+}
+  }
+
+
+
+
+
 
 
 </style>
