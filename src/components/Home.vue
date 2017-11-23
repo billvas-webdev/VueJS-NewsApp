@@ -43,13 +43,10 @@ export default {
 </script>
 
 <style scoped>
- .container{
-   padding:0;
-
-  }
 
 
-   @media (max-width: 1200px){
+
+
 body {
 
     font-family: 'Lato', arial, sans-serif;
@@ -80,12 +77,12 @@ body {
     }
   .container {
 
-    width: 70em;
+    width: 100%;
     padding-left: 0px;
     padding-right: 0px;
   }
-}
-@media (max-width: 1024px){
+
+/*@media only screen and (max-width: 1366px) and (min-width: 1120px){
 .container {
     width: auto;
   }
@@ -98,7 +95,7 @@ body {
     width: auto;
   }
 
-}
+}*/
 /*@media (max-width: 768px){
 
   .container {
@@ -143,8 +140,8 @@ body {
     zoom: 30%;
   }
 
-}
-@media (max-width: 360px){
+}*/
+/*@media (max-width: 360px){
 
   .container {
     width: auto;
@@ -168,7 +165,7 @@ body {
 
 
 }*/
-@media only screen and (max-width: 360px) and (min-width: 320px){
+/*@media only screen and (max-width: 360px) and (min-width: 320px){
 
 
     .container {
@@ -193,7 +190,7 @@ body {
 
     font-size: 3em;
   }
-}
+}*/
 
 
 </style>

@@ -59,7 +59,7 @@ created: function () {
     padding:1em;
     zoom: 155%;
     height: 15.75em;
-    border-top: 1px solid #f8b500;
+    border-top: .5px solid #f8b500;
     border-radius: .5em;
     /*background-color: #3491e4;*/
     font-family: 'Montserrat', sans-serif;
@@ -72,14 +72,14 @@ created: function () {
   h2{
     margin-top: 3px;
     margin-bottom: 10px;
-    text-shadow: 1px .5px 0 #f8b500;
+    text-shadow: -1px .5px 0 #f8b500;
     color:#072137;
     text-align: center;
     font-weight: bold;
     font-size: 3.5rem;
 }
   h4{
-    text-shadow: 1px .5px 0 #f8b500;
+    text-shadow: -1px .5px 0 #f8b500;
     color:#072137;
     text-align: center;
     font-size: 2rem;
@@ -154,39 +154,105 @@ created: function () {
 @media only screen and (max-width: 360px) and (min-width: 320px){
 
   .jumbotron  {
-
-     height: 18em;
+    zoom:120%;
+     height: 40rem;
 
   }
-
+   h2{
+    margin-top: -1.5rem;
+    font-size: 3.2rem;
+  }
   h4{
-    margin-bottom: .5em;
+    font-size: 2rem;
+    margin: 2.25rem 1.1rem 1.5rem 0;
   }
+  h6{
+    font-size: 1.45rem;
+  }
+
+
   .fa-newspaper-o {
     font-size: 1.75em;
 }
 .btn-primary{
-    width:72%;
+    width:auto;
+    font-size: 1.5rem;
 }
 
 }
 /***********   *************/
 
+@media (max-width: 436px) and (min-width: 361px){
 
+  .jumbotron  {
+     zoom:135%;
+     height: 42rem;
 
-/*********** IPHONE 6 Landscape **********/
-@media only screen and (max-width: 735) and (min-width: 640){
-
-   .jumbotron{
-
-     height: 17em;
-      zoom:100%;
   }
-}
-/********** IPHONE PLUS Landscape **********/
-@media only screen and (max-width: 768) and (min-width: 736px){
+  h6{
+    font-size: 1.2rem;
+  }
+  .btn-primary{
+    width: auto;
+    font-size: 1.37rem;
+  }
+  h2{
+    margin-top: -1.5rem;
+    font-size: 3rem;
+  }
 
-   .jumbotron  {
+}
+@media (max-width: 732px) and (min-width: 437px){
+
+  .jumbotron  {
+     zoom:130%;
+     height: 35rem;
+
+  }
+  h6{
+    font-size: 1.3rem;
+  }
+  .btn-primary{
+    width: auto;
+    font-size: 1.37rem;
+  }
+  h2{
+    margin-top: 1rem;
+  }
+
+}
+@media (max-width: 991px) and (min-width: 733px){
+
+  .jumbotron  {
+     zoom:130%;
+     height: 35rem;
+
+  }
+  h6{
+    font-size: 1.3rem;
+  }
+  .btn-primary{
+    width: auto;
+    font-size: 1.37rem;
+  }
+  h2{
+    margin-top: 1rem;
+  }
+
+}
+/*********** IPHONE 6 Landscape **********/
+/*@media (max-width: 750px) and (min-width: 400px){
+
+  .jumbotron  {
+     zoom:125%;
+     height: 18rem;
+
+  }
+}*/
+/********** IPHONE PLUS Landscape **********/
+ /*@media only screen and (max-width: 768) and (min-width: 736px){
+
+  .jumbotron  {
 
      height: 17em;
 
@@ -195,18 +261,10 @@ created: function () {
     font-size: 1em;
   }
 
-}
+}*/
 /******** TABLET IPAD LG ********/
 
 /******* IPAD Pro ********/
-/*@media (max-width: 1024px){
-
-   .jumbotron  {
-
-     height: 17em;
-
-  }
-}*/
 
 
   </style>

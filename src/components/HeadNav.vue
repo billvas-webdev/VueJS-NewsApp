@@ -97,7 +97,7 @@
   font-size: 1.25em;
   font-family: 'Lato', arial, sans-serif;
   margin-bottom: 4px;
-  border-top: 1px solid #f8b500;
+  border-top: .5px solid #f8b500;
   border-radius: .5em;
 }
 

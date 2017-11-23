@@ -71,13 +71,13 @@ a:focus {
 }
 
   .media-object {
-    max-width: 18em;
+    max-width: 45rem;
     border-radius: 2em;
     max-height: 16em;
     padding: 1em;
   }
   .media {
-    border-top: 1px solid #f8b500;
+    border-top: .5px solid #f8b500;
     /*padding: 20px 20px 20px 20px;*/
   }
 
@@ -89,6 +89,7 @@ a:focus {
     background: linear-gradient(to top, #201f23, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: .5em;
     width: auto;
+    height: 30.75rem;
 
   }
 
@@ -118,140 +119,206 @@ a:focus {
     font-size: 1.75rem;
     color: #f8b500;
   }
-  @media (max-width: 568px){
-  .container{
-    height: 16.5em;
-  }
-  li.media  {
-    height: 15.5em;
-  }
-  h5 {
-    line-height: 1.5em;
-    font-size: 1.15em;
 
-  }
-  a {
-    line-height: 1em;
-    font-size: 1.1em;
-    padding-top: 0;
-  }
-
-  .media-object {
-    max-width: 15em;
-    max-height: 14em;
-}
-p{
-    line-height: 1.1em;
-    font-size: 1.3em;
-    padding-bottom: 1em;
- }
-}
 /********* Samsung Galaxy S5 ************/
-@media (max-width: 360px){
-  .container{
-    height: 13.5em;
-  }
+@media (max-width: 319px) and (min-width: 150px){
+
   li.media  {
-    height: 14em;
+    padding: .5rem 2.25rem 0rem 2.5rem;
+    height: 52rem;
 
   }
   .media-object {
-    max-width: 15em;
-    max-height: 12em;
+    display: none;
+
 }
- a {
+ h4 {
+    text-align: center;
     line-height: 1em;
-    font-size: 1.55em;
-    padding-top: 0;
+    font-size: 2.6rem;
+
   }
  p{
     line-height: 1.1em;
-    font-size: 1.45em;
-    padding-bottom: 1em;
+    font-size: 2.6rem;
+
  }
 
 }
-@media (max-width: 568px){
-  .container{
-    height: 16.5em;
-  }
+@media (max-width: 359px) and (min-width: 320px){
+
+
   li.media  {
-    height: 15.5em;
+    height: 20.35em;
+    padding: .5rem 2rem 0rem 2rem;
+  }
+
+  .media-object {
+    display:none;
+
+}
+ h4 {
+   text-align: center;
+    line-height: 1em;
+    font-size: 2.3rem;
+ }
+p{
+    line-height: 2.4rem;
+    font-size: 2.2rem;
+    padding-bottom: 1em;
+ }
+}
+
+@media (max-width: 413px) and (min-width: 360px){
+
+  li.media  {
+    height: 45rem;
+     padding: .5rem 2.25rem 0rem 2.5rem;
+
+  }
+  .media-object {
+    display: none;
+    width: 150px;
+    height: 150px;
+}
+
+ h4 {
+   text-align: center;
+    line-height: 1em;
+    font-size: 2.35rem;
+ }
+ h5{
+   font-size: 1.75rem;
+ }
+p{
+    line-height: 2.45rem;
+    font-size: 2.2rem;
+    padding-bottom: 1em;
+ }
+}
+
+@media (max-width: 568px) and (min-width: 414px){
+
+  li.media  {
+    height: 20em;
+
+  }
+  .media-object {
+    padding: 3.5rem 0rem 0rem 2.5rem;
+    border-radius:0;
+    width: 25rem;
+    height: auto;
+}
+
+ h4 {
+    line-height: 1em;
+    font-size: 2.1rem;
+ }
+ h5{
+   font-size: 1.75rem;
+ }
+p{
+  padding: -5rem 1rem 1.5rem 2rem;
+    line-height: 2.45rem;
+    font-size: 2rem;
+
+ }
+}
+
+@media (max-width: 733px) and (min-width: 569px){
+
+  li.media  {
+    height: 26.1rem;
+  }
+  h4{
+    font-size: 2.25rem;
+
+
   }
   h5 {
     line-height: 1.5em;
-    font-size: 1.15em;
+    font-size: 2rem;
 
   }
-  a {
-    line-height: 1em;
-    font-size: 1.1em;
-    padding-top: 0;
-  }
-
   .media-object {
-    max-width: 15em;
-    max-height: 14em;
+    margin-top: 1.25rem;
+    padding: 1.25rem 1rem 1rem 1rem;
+    max-width: 37rem;
+    max-height: auto;
 }
 p{
     line-height: 1.1em;
-    font-size: 1.3em;
+    font-size: 2.2rem;
     padding-bottom: 1em;
  }
 }
 
-@media (max-width: 320px){
-  .container{
-    height: 16.5em;
-  }
+
+@media (max-width: 991px) and (min-width: 734px){
+
   li.media  {
-    height: 15em;
+    height: 26rem;
   }
-  a {
-    line-height: 1em;
-    font-size: 1.2em;
-    padding-top: 0;
-  }
+  h4{
+    font-size: 2.25rem;
 
-  .media-object {
-    max-width: 18em;
-    max-height: 15em;
-}
-p{
-    line-height: 1.1em;
-    font-size: 1.55em;
-    padding-bottom: 1em;
- }
-}
-
-@media (max-width: 768px){
-  .container{
-    height: 13.5em;
-  }
-  li.media  {
-    height: 14em;
 
   }
-  .media-object {
-    max-width: 15em;
-    max-height: 11em;
-}
-h5 {
+  h5 {
     line-height: 1.5em;
-    font-size: 1.25em;
+    font-size: 2rem;
 
   }
- a {
-    line-height: 1em;
-    font-size: 1em;
-    padding-top: 0;
-  }
- p{
+  .media-object {
+    margin-top: 1rem;
+    padding: 1.25rem 1rem 1rem 1rem;
+    max-width: 37rem;
+    max-height: auto;
+}
+p{
     line-height: 1.1em;
-    font-size: 1.3em;
+    font-size: 2.2rem;
     padding-bottom: 1em;
  }
+}
 
+
+@media (max-width: 2319px) and (min-width: 1200px){
+
+  li.media  {
+    height: 38.5rem;
+
+  }
+  h4{
+    font-size: 3rem;
+
+
+  }
+  h5 {
+    line-height: 1.5em;
+    font-size: 2.25rem;
+
+  }
+  .media-object {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1rem 1rem 1rem;
+    max-width: 50rem;
+    max-height: auto;
+
+
+}
+.media-object:hover{
+  opacity: .7;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+p{
+    line-height: 1.1em;
+    font-size: 2.75rem;
+    padding-bottom: 1em;
+ }
 }
 
 </style>

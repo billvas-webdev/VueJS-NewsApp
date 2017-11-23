@@ -137,7 +137,7 @@ a {
 }
 a:hover {
 
-  background:#1576cc;
+  background:lightgoldenrodyellow;
   color: #273241;
 }
 a:focus {
@@ -148,7 +148,7 @@ background:#072137;
   color: #9cd1ff;
 }
   a.btn-cta-primary:hover {
-  background:#1576cc;
+  background:lightgoldenrodyellow;
   color: #072137;
 
 }
@@ -169,10 +169,10 @@ background:#072137;
     font-weight: bolder;
     font-size: 1.35em;
     background: #fff1e5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #1576cc, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #1576cc, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, #1576cc, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1576cc, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-     -webkit-animation: colorchange 10s; /* Chrome and Safari */
+     -webkit-animation: colorchange 15s; /* Chrome and Safari */
     }
     @keyframes colorchange
     {
@@ -190,6 +190,7 @@ background:#072137;
       50%  {background: orange;}
       75%  {background: lightcoral;}
       100% {background: plum;}
+
     }
 
 .fa {

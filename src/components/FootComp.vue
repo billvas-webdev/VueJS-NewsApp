@@ -29,7 +29,7 @@
   color: #f8b500;
   margin-top: -.35em;
   padding: .65em 0;
-  border-top: 1px solid #f8b500;
+  border-top: .5px solid #f8b500;
 
   border-radius: .5em;
 }
