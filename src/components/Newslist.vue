@@ -52,7 +52,9 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+body{
+  font-family: "Avenir";
+}
 a {
    color:#299cff;
 
@@ -71,18 +73,18 @@ a:focus {
 }
 
   .media-object {
-    max-width: 45rem;
+    max-width: 52rem;
+    max-height: 38rem;
     border-radius: 2em;
-    max-height: 16em;
-    padding: 1em;
+    padding: 2.5rem;
   }
   .media {
     border-top: .5px solid #f8b500;
-    /*padding: 20px 20px 20px 20px;*/
+
   }
 
   li.media{
-
+     font-family: "Avenir";
     background-color: #131313;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #201f23, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -149,107 +151,112 @@ a:focus {
 
 
   li.media  {
-    height: 20.35em;
-    padding: .5rem 2rem 0rem 2rem;
+    height: 18.5rem;
+    padding: .25rem 0.25rem 0rem .25rem;
   }
 
   .media-object {
-    display:none;
+   margin: 1rem 0 0 .25rem;
+    border-radius:15px;
+    float:left;
+    padding: .5rem .5rem .5rem .5rem;
+    width: 16rem;
+    height: 16rem;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 
 }
- h4 {
-   text-align: center;
+
+h4 {
+   margin: -.9rem 0 .75rem 0;
     line-height: 1em;
-    font-size: 2.3rem;
- }
-p{
-    line-height: 2.4rem;
-    font-size: 2.2rem;
-    padding-bottom: 1em;
- }
-}
-
-@media (max-width: 413px) and (min-width: 360px){
-
-  li.media  {
-    height: 45rem;
-     padding: .5rem 2.25rem 0rem 2.5rem;
-
-  }
-  .media-object {
-    display: none;
-    width: 150px;
-    height: 150px;
-}
-
- h4 {
-   text-align: center;
-    line-height: 1em;
-    font-size: 2.35rem;
+    font-size: 1.4rem;
  }
  h5{
-   font-size: 1.75rem;
+   margin: -.65rem 0 .65rem 0;
+   font-size: 1.2rem;
+   line-height: 1.5rem;
  }
 p{
-    line-height: 2.45rem;
-    font-size: 2.2rem;
-    padding-bottom: 1em;
+  margin: -.65rem 0 .5rem 0;
+  line-height: 1.3rem;
+  font-size: 1.4rem;
  }
 }
 
-@media (max-width: 568px) and (min-width: 414px){
+@media (max-width: 733px) and (min-width: 360px){
 
   li.media  {
-    height: 20em;
+    height: 18.5rem;
+     padding: .25rem 0rem 0rem 0rem;
 
   }
-  .media-object {
-    padding: 3.5rem 0rem 0rem 2.5rem;
-    border-radius:0;
-    width: 25rem;
-    height: auto;
+.media-object {
+  margin: 1rem 0 0 .25rem;
+    border-radius:15px;
+    float:left;
+    padding: .5rem .5rem .5rem .5rem;
+    width: 18rem;
+    height: 16rem;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+.media left{
+  padding:-5px;
 }
 
  h4 {
-    line-height: 1em;
-    font-size: 2.1rem;
+   margin: -.6rem 0 .75rem 0;
+    line-height: 1.35rem;
+    font-size: 1.5rem;
  }
  h5{
-   font-size: 1.75rem;
+   margin: -.75rem 0 .65rem 0;
+   font-size: 1rem;
+   line-height: 1.5rem;
  }
 p{
-  padding: -5rem 1rem 1.5rem 2rem;
-    line-height: 2.45rem;
-    font-size: 2rem;
-
+  margin: -.75rem 0 .5rem 0;
+  line-height: 1.5rem;
+  font-size: 1.45rem;
  }
 }
+
+
 
 @media (max-width: 733px) and (min-width: 569px){
 
   li.media  {
-    height: 26.1rem;
+    height: 28.5rem;
   }
   h4{
-    font-size: 2.25rem;
-
+    margin: -.65rem 0 .75rem 0;
+    line-height: 1em;
+    font-size: 2.1rem;
 
   }
   h5 {
-    line-height: 1.5em;
-    font-size: 2rem;
+     margin: -.25rem 0 .65rem 0;
+   font-size: 1.75rem;
+   line-height: 1.5rem;
 
   }
   .media-object {
-    margin-top: 1.25rem;
-    padding: 1.25rem 1rem 1rem 1rem;
-    max-width: 37rem;
-    max-height: auto;
+    margin: 1.75rem 0 0 1rem;
+    border-radius:15px;
+    float:left;
+    padding: .5rem .5rem .5rem .5rem;
+    width: 30rem;
+    height: 25rem;
+
+
 }
 p{
-    line-height: 1.1em;
-    font-size: 2.2rem;
-    padding-bottom: 1em;
+     margin: -.25rem 0 .5rem 0;
+  line-height: 2rem;
+  font-size: 1.85rem;
  }
 }
 
@@ -260,50 +267,69 @@ p{
     height: 26rem;
   }
   h4{
-    font-size: 2.25rem;
+    margin: -.5rem 0 .75rem 0;
+    line-height: 1em;
+    font-size: 2.1rem;
 
 
   }
   h5 {
-    line-height: 1.5em;
-    font-size: 2rem;
+    margin: -.25rem 0 .65rem 0;
+   font-size: 1.75rem;
+   line-height: 1.5rem;
 
   }
   .media-object {
-    margin-top: 1rem;
-    padding: 1.25rem 1rem 1rem 1rem;
-    max-width: 37rem;
-    max-height: auto;
+    margin: 1.75rem 0 0 1rem;
+    border-radius:15px;
+    float:left;
+    padding: .5rem .5rem .5rem .5rem;
+    width: 30rem;
+    height: 22rem;
+
 }
 p{
-    line-height: 1.1em;
-    font-size: 2.2rem;
-    padding-bottom: 1em;
+    margin: -.5rem 0 .5rem 0;
+  line-height: 2rem;
+  font-size: 2rem;
  }
 }
 
 
-@media (max-width: 2319px) and (min-width: 1200px){
+@media (max-width: 3000px) and (min-width: 992px){
 
   li.media  {
-    height: 38.5rem;
+    height: 37.5rem;
 
   }
   h4{
+     margin: -.6rem 0 .75rem 0;
+    line-height: .9em;
     font-size: 3rem;
 
 
   }
   h5 {
-    line-height: 1.5em;
-    font-size: 2.25rem;
+     margin: 1rem 0 1rem 0;
+   font-size: 2rem;
+   line-height: 1.5rem;
+
 
   }
+  p{
+
+  margin: 0rem 0 .5rem 0;
+  line-height: 2.6rem;
+  font-size: 2.5rem;
+ }
   .media-object {
-    margin-top: 1.5rem;
-    padding: 1.25rem 1rem 1rem 1rem;
-    max-width: 50rem;
-    max-height: auto;
+
+
+    width: 55rem;
+    height: 40rem;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 
 
 }
@@ -314,11 +340,7 @@ p{
     -webkit-transition: opacity .5s ease-out;
     -o-transition: opacity .5s ease-out;
 }
-p{
-    line-height: 1.1em;
-    font-size: 2.75rem;
-    padding-bottom: 1em;
- }
+
 }
 
 </style>

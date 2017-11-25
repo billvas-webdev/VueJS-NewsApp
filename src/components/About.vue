@@ -184,16 +184,16 @@ h1{
 
   .container  {
     padding: 1rem 1rem 0rem 1rem ;
-    height: 44rem;
+    height: 48rem;
 }
   h1{
-    font-size: 2.6rem;
+    font-size: 2.35rem;
     margin-bottom: -1rem;
     margin-top:0rem;
   }
   .img-responsive{
-  height: 5.8rem;
-  width: 5.8rem;
+  height: 5.7rem;
+  width: 5.7rem;
 }
   p{
     font-size:2.05rem;
@@ -263,10 +263,10 @@ h1{
 
   .container  {
     padding: 1rem 10rem 0rem 10rem ;
-    height: 50.75rem;
+    height: 43rem;
 }
   h1{
-    font-size: 3.2rem;
+    font-size:3.75rem;
     margin-bottom: -1rem;
     margin-top:1rem;
   }

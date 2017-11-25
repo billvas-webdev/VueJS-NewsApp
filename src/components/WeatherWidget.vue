@@ -51,15 +51,36 @@ export default {
     background: -webkit-linear-gradient(to top, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-@media (max-width: 639px) and (min-width: 400px){
-
+@media (max-width: 359px) and (min-width: 320px){
   .jumbotron  {
      zoom:100%;
      height: 18em;
 
   }
 }
+@media (max-width: 399px) and (min-width: 359px){
+  .jumbotron  {
+     zoom:100%;
+     height: 18em;
+
+  }
+}
+
+@media (max-width: 639px) and (min-width: 400px){
+
+  .jumbotron  {
+     zoom:85%;
+     height: 18em;
+
+  }
+}
 @media only screen and (max-width: 732px) and (min-width: 640px){
+
+  .jumbotron {
+    zoom: 120%;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 733px){
 
   .jumbotron {
     zoom: 120%;

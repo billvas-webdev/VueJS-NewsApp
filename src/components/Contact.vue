@@ -231,7 +231,7 @@ background:#072137;
 
 }
 
-@media only screen and (max-width: 768px) and (min-width: 568px){
+@media only screen and (max-width: 767px) and (min-width: 568px){
 
   .container  {
     padding: 1rem 10rem 0rem 10rem ;
@@ -256,7 +256,12 @@ background:#072137;
 
   .container  {
     padding: 1rem 10rem 0rem 10rem ;
-    height: 30.5rem;
+    height: 37rem;
+}
+h1{
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    margin-top:1rem;
 }
 }
 

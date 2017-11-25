@@ -62,7 +62,7 @@ created: function () {
     border-top: .5px solid #f8b500;
     border-radius: .5em;
     /*background-color: #3491e4;*/
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Avenir','Montserrat', sans-serif;
     font-weight: bolder;
     background: #fff1e5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #1576cc, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
@@ -70,13 +70,13 @@ created: function () {
 }
 
   h2{
-    margin-top: 3px;
+    margin-top: -2rem;
     margin-bottom: 10px;
     text-shadow: -1px .5px 0 #f8b500;
     color:#072137;
     text-align: center;
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 3.75rem;
 }
   h4{
     text-shadow: -1px .5px 0 #f8b500;
@@ -88,10 +88,9 @@ created: function () {
   }
   h6{
     line-height: 1.1em;
-
-    font-weight: 600;
+    font-weight: 500;
     color:#072137;
-    font-size: 1.05rem;
+    font-size: 1.25rem;
     padding:  0;
     margin-top: 7px;
     margin-bottom: 4px;
@@ -104,8 +103,8 @@ created: function () {
     margin:0 auto; /* this will center  it */
 
     font-style:normal;
-    font-weight:normal;
-    font-family: 'Montserrat','Lato', arial, sans-serif;
+    font-weight: 500;
+    font-family: 'Avenir','Montserrat','Lato', arial, sans-serif;
     font-size:1.1em;
     outline:#f8b500;
     color:#fff;
@@ -131,12 +130,13 @@ created: function () {
 }
 
   select.form-control {
+  background-color: lightgoldenrodyellow;
   color:#2b3b50;
-  font-family: 'Montserrat','Lato', arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-family: 'Ariel','Montserrat','Lato', arial, sans-serif;
+  font-size: 1.75rem;
+  font-weight: normal;
   height: 2em;
-  background-color: #fff;
+
 }
 
   .fa-newspaper-o {
@@ -154,19 +154,23 @@ created: function () {
 @media only screen and (max-width: 360px) and (min-width: 320px){
 
   .jumbotron  {
-    zoom:120%;
-     height: 40rem;
+    zoom:100%;
+     height: 27rem;
 
   }
    h2{
+     font-family: "Avenir";
     margin-top: -1.5rem;
     font-size: 3.2rem;
   }
   h4{
+    font-family: "Avenir";
     font-size: 2rem;
-    margin: 2.25rem 1.1rem 1.5rem 0;
+    margin: -.75rem 0rem .5rem 0;
   }
   h6{
+    font-family: "Avenir";
+    font-weight:500;
     font-size: 1.45rem;
   }
 
@@ -185,70 +189,100 @@ created: function () {
 @media (max-width: 436px) and (min-width: 361px){
 
   .jumbotron  {
-     zoom:135%;
-     height: 42rem;
+     zoom:115%;
+     height: 25rem;
 
   }
-  h6{
-    font-size: 1.2rem;
+h2{
+    font-family: "Avenir";
+    margin-top: -1.5rem;
+    font-size: 3.2rem;
+  }
+h4{
+    font-family: "Avenir";
+    font-size: 2rem;
+    margin: -1rem 0rem .5rem 0;
+  }
+h6{
+    line-height: 1.75rem;
+    font-family: "Avenir";
+    font-weight:500;
+    font-size: 1.45rem;
   }
   .btn-primary{
+    font-weight: 700;
+    font-family: "Avenir";
     width: auto;
     font-size: 1.37rem;
   }
-  h2{
-    margin-top: -1.5rem;
-    font-size: 3rem;
-  }
+
 
 }
 @media (max-width: 732px) and (min-width: 437px){
 
-  .jumbotron  {
-     zoom:130%;
-     height: 35rem;
+   .jumbotron  {
+     zoom:115%;
+     height: 26rem;
 
   }
-  h6{
-    font-size: 1.3rem;
+h2{
+    font-family: "Avenir";
+    margin-top: -1.5rem;
+    font-size: 3.2rem;
+  }
+h4{
+    font-family: "Avenir";
+    font-size: 2rem;
+    margin: -1rem 0rem .5rem 0;
+  }
+h6{
+    line-height: 1.75rem;
+    font-family: "Avenir";
+    font-weight:500;
+    font-size: 1.45rem;
   }
   .btn-primary{
+    font-weight: 700;
+    font-family: "Avenir";
     width: auto;
     font-size: 1.37rem;
   }
-  h2{
-    margin-top: 1rem;
-  }
+
 
 }
 @media (max-width: 991px) and (min-width: 733px){
 
-  .jumbotron  {
-     zoom:130%;
-     height: 35rem;
+    .jumbotron  {
+     zoom:115%;
+     height: 25rem;
 
   }
-  h6{
-    font-size: 1.3rem;
+h2{
+    font-family: "Avenir";
+    margin-top: -1.5rem;
+    font-size: 3.2rem;
+  }
+h4{
+    font-family: "Avenir";
+    font-size: 2rem;
+    margin: -1rem 0rem .5rem 0;
+  }
+h6{
+    line-height: 1.75rem;
+    font-family: "Avenir";
+    font-weight:500;
+    font-size: 1.45rem;
   }
   .btn-primary{
+    font-weight: 700;
+    font-family: "Avenir";
     width: auto;
     font-size: 1.37rem;
   }
-  h2{
-    margin-top: 1rem;
-  }
+
 
 }
-/*********** IPHONE 6 Landscape **********/
-/*@media (max-width: 750px) and (min-width: 400px){
 
-  .jumbotron  {
-     zoom:125%;
-     height: 18rem;
-
-  }
-}*/
 /********** IPHONE PLUS Landscape **********/
  /*@media only screen and (max-width: 768) and (min-width: 736px){
 
