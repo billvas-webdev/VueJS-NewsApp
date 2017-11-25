@@ -4,7 +4,7 @@
     <div class="jumbotron">
 
   <h2><span class="fa fa-newspaper-o"></span>Daily News</h2>
-    <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Select News Source</h4>
+    <h4> Select News Source</h4>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <select class="form-control" v-on:change="sourceChanged">
@@ -55,6 +55,9 @@ created: function () {
 </script>
 
 <style scoped>
+body{
+  font-family: 'Avenir','Montserrat','Lato', arial, sans-serif;
+}
   .jumbotron {
     padding:1em;
     zoom: 155%;
@@ -72,19 +75,20 @@ created: function () {
   h2{
     margin-top: -2rem;
     margin-bottom: 10px;
-    text-shadow: -1px .5px 0 #f8b500;
+    text-shadow: 1px .75px 0 lightgoldenrodyellow;
     color:#072137;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: 'Lato', arial, sans-serif;
     font-size: 3.75rem;
 }
   h4{
-    text-shadow: -1px .5px 0 #f8b500;
+    text-shadow: 1px .75px 0 lightgoldenrodyellow;
     color:#072137;
     text-align: center;
     font-size: 2rem;
-    margin-top: -7px;
-    margin-bottom: 5px;
+    margin: -1rem 0 1rem 10rem;
+
   }
   h6{
     line-height: 1.1em;
@@ -107,13 +111,13 @@ created: function () {
     font-family: 'Avenir','Montserrat','Lato', arial, sans-serif;
     font-size:1.1em;
     outline:#f8b500;
-    color:#fff;
+    color:lightgoldenrodyellow;
     border:none;
 
     text-align:center;
     border-radius:.5em;
     background-color:#072137;
-    border:1px solid #f8b500;
+    border:1px solid lightgoldenrodyellow;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -132,11 +136,15 @@ created: function () {
   select.form-control {
   background-color: lightgoldenrodyellow;
   color:#2b3b50;
-  font-family: 'Ariel','Montserrat','Lato', arial, sans-serif;
-  font-size: 1.75rem;
-  font-weight: normal;
-  height: 2em;
+  font-family: 'Avenir','Montserrat','Lato', arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
 
+  height: 4.5rem;
+
+}
+.form-control{
+  font-family: 'Ariel';
 }
 
   .fa-newspaper-o {
@@ -159,14 +167,15 @@ created: function () {
 
   }
    h2{
-     font-family: "Avenir";
+    font-family: 'Avenir','Montserrat','Lato', arial, sans-serif;
     margin-top: -1.5rem;
     font-size: 3.2rem;
+    font-weight: bolder;
   }
   h4{
     font-family: "Avenir";
     font-size: 2rem;
-    margin: -.75rem 0rem .5rem 0;
+    margin: -1rem 0 1rem 6rem;
   }
   h6{
     font-family: "Avenir";
@@ -201,7 +210,7 @@ h2{
 h4{
     font-family: "Avenir";
     font-size: 2rem;
-    margin: -1rem 0rem .5rem 0;
+    margin: -1rem 0 .5rem 6rem;
   }
 h6{
     line-height: 1.75rem;
@@ -233,7 +242,7 @@ h2{
 h4{
     font-family: "Avenir";
     font-size: 2rem;
-    margin: -1rem 0rem .5rem 0;
+     margin: -1rem 0 .5rem 6rem;
   }
 h6{
     line-height: 1.75rem;
@@ -258,14 +267,14 @@ h6{
 
   }
 h2{
-    font-family: "Avenir";
+    font-family: 'Ariel','Montserrat','Lato', arial, sans-serif;
     margin-top: -1.5rem;
     font-size: 3.2rem;
   }
 h4{
     font-family: "Avenir";
     font-size: 2rem;
-    margin: -1rem 0rem .5rem 0;
+     margin: -1rem 0rem .5rem 6rem;
   }
 h6{
     line-height: 1.75rem;

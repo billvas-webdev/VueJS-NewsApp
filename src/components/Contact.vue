@@ -230,8 +230,51 @@ background:#072137;
   }
 
 }
+@media only screen and (max-width: 513px) and (min-width: 413px){
 
-@media only screen and (max-width: 767px) and (min-width: 568px){
+   .container  {
+    padding: 1rem 1rem 0rem 1rem ;
+    height: 30rem;
+}
+  h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top:0rem;
+  }
+  .img-responsive{
+  height: 5.8rem;
+  width: 5.8rem;
+}
+  p{
+    font-size:2rem;
+     padding-top:0rem;
+  }
+
+}
+@media only screen and (max-width: 555px) and (min-width: 514px){
+
+   .container  {
+    padding: 1rem 1rem 0rem 1rem ;
+    height: 27rem;
+}
+  h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top:0rem;
+  }
+  .img-responsive{
+  height: 5.8rem;
+  width: 5.8rem;
+}
+  p{
+    font-size:2rem;
+     padding-top:0rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 556px){
 
   .container  {
     padding: 1rem 10rem 0rem 10rem ;
@@ -252,11 +295,23 @@ background:#072137;
   }
 
 }
-@media only screen and (max-width: 1024px) and (min-width: 768px){
+@media only screen and (max-width: 992px) and (min-width: 768px){
 
   .container  {
     padding: 1rem 10rem 0rem 10rem ;
     height: 37rem;
+}
+h1{
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    margin-top:1rem;
+}
+}
+@media only screen and (max-width: 3000px) and (min-width: 993px){
+
+  .container  {
+    padding: 1rem 20rem 0rem 20rem ;
+    height: 33rem;
 }
 h1{
     font-size: 4.5rem;

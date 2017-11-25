@@ -58,7 +58,7 @@
 
   .footer .fa-newspaper-o {
   position: relative;
-  top:0rem;
+
   }
 }
 

@@ -23,7 +23,7 @@
 /* ======= Base ======= */
 
 h1{
-  margin-top: 1rem;
+  margin-top: -1rem;
   font-size: 5rem;
   text-transform: uppercase;
   font-weight:bolder;
@@ -80,12 +80,13 @@ p{
 
 #weather-icon{
   float:right;
-
+  margin-top: -1.5rem;
   -webkit-filter: invert(70%);
   filter: invert(2%);
 
 }
 #news-icon{
+  margin-top: -1rem;
   -webkit-filter: invert(80%);
   filter: invert(20%);
 
@@ -180,16 +181,16 @@ h1{
 }
 }
 
-@media only screen and (max-width: 414px) and (min-width: 360px){
+@media only screen and (max-width: 414px) and (min-width: 359px){
 
   .container  {
     padding: 1rem 1rem 0rem 1rem ;
-    height: 48rem;
+    height: 44rem;
 }
   h1{
-    font-size: 2.35rem;
+    font-size: 2.65rem;
     margin-bottom: -1rem;
-    margin-top:0rem;
+    margin-top:.25rem;
   }
   .img-responsive{
   height: 5.7rem;
@@ -230,11 +231,11 @@ h1{
   }
 
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 359px) and (min-width: 320px){
 
   .container  {
     padding: 1rem .5rem 1rem 0.5rem ;
-    height: 40rem;
+    height: 42rem;
 }
   h1{
     font-size: 2.2rem;
@@ -259,14 +260,14 @@ h1{
   }
 
 }
-@media only screen and (max-width: 768px) and (min-width: 568px){
+@media only screen and (max-width: 767px) and (min-width: 568px){
 
   .container  {
-    padding: 1rem 10rem 0rem 10rem ;
-    height: 43rem;
+    padding: 1rem 2rem 0rem 2rem ;
+    height: 44rem;
 }
   h1{
-    font-size:3.75rem;
+    font-size:3.5rem;
     margin-bottom: -1rem;
     margin-top:1rem;
   }
@@ -286,6 +287,40 @@ h1{
      line-height: 3rem;
   }
 
+}
+@media only screen and (max-width: 567px) and (min-width: 416px){
+
+  .container  {
+    padding: 1rem 0.5rem 0rem 0.5rem ;
+    height: 51rem;
+}
+ h1{
+    font-size:2.75rem;
+    margin-bottom: -1rem;
+    margin-top:0rem;
+  }
+}
+@media only screen and (max-width: 415px) and (min-width: 361px){
+
+  .container  {
+    padding: 1rem 1rem 0rem 1rem ;
+    height: 47rem;
+}
+ h1{
+    font-size:2.4rem;
+    margin-bottom: -1rem;
+    margin-top:.5rem;
+  }
+  #weather-icon{
+    margin-top: .55rem;
+    height: 9.5rem;
+    width: 9.5rem;
+}
+  #news-icon{
+    margin-top: .75rem;
+    height: 8rem;
+    width: 8rem;
+}
 }
 
 

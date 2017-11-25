@@ -60,8 +60,8 @@ export default {
 }
 @media (max-width: 399px) and (min-width: 359px){
   .jumbotron  {
-     zoom:100%;
-     height: 18em;
+     zoom:110%;
+     height: 16.5em;
 
   }
 }
@@ -69,7 +69,7 @@ export default {
 @media (max-width: 639px) and (min-width: 400px){
 
   .jumbotron  {
-     zoom:85%;
+     zoom:79%;
      height: 18em;
 
   }
