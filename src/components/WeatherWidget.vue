@@ -45,7 +45,7 @@ export default {
     height: 18em;
     zoom: 143%;
     padding: 1em;
-    border-top: .5px solid #f8b500;
+    border-top: .5px solid lightgoldenrodyellow;
     border-radius: .5em;
     background: #fceabb;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */

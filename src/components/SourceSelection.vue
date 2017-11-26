@@ -62,7 +62,7 @@ body{
     padding:1em;
     zoom: 155%;
     height: 15.75em;
-    border-top: .5px solid #f8b500;
+    border-top: .5px solid lightgoldenrodyellow;
     border-radius: .5em;
     /*background-color: #3491e4;*/
     font-family: 'Avenir','Montserrat', sans-serif;
@@ -125,6 +125,7 @@ body{
 
   }
   .btn-primary:hover {
+  border:1px solid #072137;
   background:#1576cc;
   color: #072137;
 

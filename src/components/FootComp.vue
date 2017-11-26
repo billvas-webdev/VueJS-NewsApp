@@ -25,11 +25,12 @@
 }*/
 /* ======= Footer =======*/
 .footer {
+
   background: #204d8a;
-  color: #f8b500;
-  margin-top: -.35em;
+  color: lightgoldenrodyellow;
+  margin-top: -.55rem;
   padding: .65em 0;
-  border-top: .5px solid #f8b500;
+  border-top: .5px solid lightgoldenrodyellow;
 
   border-radius: .5em;
 }
@@ -39,13 +40,13 @@
   font-size: 14px;
 }
 .footer a {
-  color: #f8b500;
+  color: lightgoldenrodyellow;
 }
 .footer a:hover{
   color:orangered;
 }
 .footer .fa-newspaper-o {
-  color: orangered;
+  color: lightgoldenrodyellow;
   position: relative;
   top:.2rem;
 }
