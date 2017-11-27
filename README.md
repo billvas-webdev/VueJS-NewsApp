@@ -1,6 +1,6 @@
 # vue-news-app
 
-> (News Web App - Capstone project for WATS 4030) 
+**News and Weather Web App utilizing Vue JS Vue Resource, Geolocation, DarkSki API, Node JS, News API, Bootstrap, JQuery and Google Analytics- Capstone project for Seattle University Web Development WATS 4030**
 
 ## Build Setup
 

@@ -1,6 +1,5 @@
 <template>
-
-<div class="jumbotron">
+  <div class="jumbotron">
     <weather
         api-key="a1a5357a4bc875aba578cf0eec58ab94"
         title="Local Weather Forecast"
@@ -10,19 +9,16 @@
         units="us"
         bar-color="#2b3b50"
         text-color="#072137">
-
     </weather>
-</div>
-
-
+  </div>
 </template>
 
 <script>
 import VueWeatherWidget from 'vue-weather-widget';
 import 'vue-weather-widget/dist/css/vue-weather-widget.css';
 
-export default {
-    components: {
+    export default {
+      components: {
         'weather': VueWeatherWidget
     },
 
@@ -38,9 +34,7 @@ export default {
 </script>
 <style scoped>
 
-
-  .jumbotron {
-
+.jumbotron {
     color:#163761;
     height: 18em;
     zoom: 143%;
@@ -53,8 +47,8 @@ export default {
 }
 @media (max-width: 359px) and (min-width: 320px){
   .jumbotron  {
-     zoom:100%;
-     height: 18em;
+    zoom:100%;
+    height: 18em;
 
   }
 }
@@ -62,31 +56,23 @@ export default {
   .jumbotron  {
      zoom:110%;
      height: 16.5em;
-
   }
 }
-
 @media (max-width: 639px) and (min-width: 400px){
-
   .jumbotron  {
      zoom:79%;
      height: 18em;
-
   }
 }
 @media only screen and (max-width: 732px) and (min-width: 640px){
-
   .jumbotron {
     zoom: 120%;
   }
 }
 @media only screen and (max-width: 991px) and (min-width: 733px){
-
   .jumbotron {
     zoom: 120%;
   }
 }
-
-
 
 </style>
