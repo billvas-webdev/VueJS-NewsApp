@@ -136,7 +136,7 @@ select.form-control {
 
 
 /******* IPHONE 6 ********/
-@media only screen and (max-width: 360px) and (min-width: 320px){
+@media only screen and (max-width: 337px) and (min-width: 320px){
 
 .jumbotron  {
     zoom:100%;
@@ -162,6 +162,7 @@ h6{
     font-size: 1.75em;
 }
 .btn-primary{
+    margin-top: 1rem;
     width:auto;
     font-size: 1.5rem;
 }
@@ -169,7 +170,162 @@ h6{
 }
 /***********   *************/
 
-@media (max-width: 436px) and (min-width: 361px){
+@media only screen and (max-width: 360px) and (min-width: 337px){
+
+  .jumbotron  {
+    zoom:100%;
+    height: 25.5rem;
+}
+h2{
+    font-family: 'Avenir','Montserrat','Lato', arial, sans-serif;
+    margin-top: -1.5rem;
+    font-size: 3.2rem;
+    font-weight: bolder;
+}
+h4{
+    font-family: "Avenir";
+    font-size: 2rem;
+    margin: -1rem 0 1rem 6rem;
+}
+h6{
+    font-family: "Avenir";
+    font-weight:500;
+    font-size: 1.45rem;
+}
+.fa-newspaper-o {
+    font-size: 1.75em;
+}
+.btn-primary{
+    margin-top: 1rem;
+    width:auto;
+    font-size: 1.5rem;
+}
+
+}
+
+@media (max-width: 389px) and (min-width: 361px){
+
+.jumbotron  {
+    zoom:115%;
+    height: 28.25rem;
+}
+h2{
+    font-family: "Avenir";
+    margin-top: -1.5rem;
+    font-size: 3.2rem;
+}
+h4{
+    font-family: "Avenir";
+    font-size: 2rem;
+    margin: -1rem 0 .5rem 6rem;
+}
+h6{
+    line-height: 1.75rem;
+    font-family: "Avenir";
+    font-weight:500;
+    font-size: 1.45rem;
+}
+.btn-primary{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: "Avenir";
+    width: auto;
+    font-size: 1.37rem;
+}
+}
+
+@media (max-width: 436px) and (min-width: 390px){
+
+.jumbotron  {
+    zoom:115%;
+    height: 27rem;
+}
+h2{
+    font-family: "Avenir";
+    margin-top: -1.5rem;
+    font-size: 3.2rem;
+}
+h4{
+    font-family: "Avenir";
+    font-size: 2rem;
+    margin: -1rem 0 .5rem 6rem;
+}
+h6{
+    line-height: 1.75rem;
+    font-family: "Avenir";
+    font-weight:500;
+    font-size: 1.45rem;
+}
+.btn-primary{
+    margin-top: 1rem;
+    font-weight: 700;
+    font-family: "Avenir";
+    width: auto;
+    font-size: 1.37rem;
+}
+}
+
+@media (max-width: 469px) and (min-width: 437px){
+
+.jumbotron  {
+    zoom:115%;
+    height: 26.25rem;
+}
+h2{
+    font-family: "Avenir";
+    margin-top: -1.5rem;
+    font-size: 3.2rem;
+}
+h4{
+    font-family: "Avenir";
+    font-size: 2rem;
+    margin: -1rem 0 .5rem 6rem;
+}
+h6{
+    line-height: 1.75rem;
+    font-family: "Avenir";
+    font-weight:500;
+    font-size: 1.45rem;
+}
+.btn-primary{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: "Avenir";
+    width: auto;
+    font-size: 1.37rem;
+}
+}
+@media (max-width: 510px) and (min-width: 469px){
+
+.jumbotron  {
+    zoom:115%;
+    height: 26.5rem;
+}
+h2{
+    font-family: "Avenir";
+    margin-top: -1.5rem;
+    font-size: 3.2rem;
+}
+h4{
+    font-family: "Avenir";
+    font-size: 2rem;
+    margin: -1rem 0 .5rem 6rem;
+}
+h6{
+    line-height: 1.75rem;
+    font-family: "Avenir";
+    font-weight:500;
+    font-size: 1.45rem;
+}
+.btn-primary{
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-family: "Avenir";
+    width: auto;
+    font-size: 1.55rem;
+}
+}
+@media (max-width: 717px) and (min-width: 511px){
 
 .jumbotron  {
     zoom:115%;
@@ -189,46 +345,17 @@ h6{
     line-height: 1.75rem;
     font-family: "Avenir";
     font-weight:500;
-    font-size: 1.45rem;
+    font-size: 1.4rem;
 }
 .btn-primary{
+    margin-bottom: 1rem;
     font-weight: 700;
     font-family: "Avenir";
     width: auto;
-    font-size: 1.37rem;
+    font-size: 1.65rem;
 }
 }
-
-@media (max-width: 732px) and (min-width: 437px){
-
-.jumbotron  {
-    zoom:115%;
-    height: 26rem;
-}
-h2{
-    font-family: "Avenir";
-    margin-top: -1.5rem;
-    font-size: 3.2rem;
-}
-h4{
-    font-family: "Avenir";
-    font-size: 2rem;
-    margin: -1rem 0 .5rem 6rem;
-}
-h6{
-    line-height: 1.75rem;
-    font-family: "Avenir";
-    font-weight:500;
-    font-size: 1.45rem;
-}
-.btn-primary{
-    font-weight: 700;
-    font-family: "Avenir";
-    width: auto;
-    font-size: 1.37rem;
-}
-}
-@media (max-width: 991px) and (min-width: 733px){
+@media (max-width: 743px) and (min-width: 718px){
 
 .jumbotron  {
     zoom:115%;
@@ -254,7 +381,7 @@ h6{
     font-weight: 700;
     font-family: "Avenir";
     width: auto;
-    font-size: 1.37rem;
+    font-size: 1.6rem;
 }
 }
 </style>
