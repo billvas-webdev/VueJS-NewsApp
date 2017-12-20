@@ -46,6 +46,15 @@ export default {
     }
   }
 }
+window.sr = ScrollReveal({ reset: true });
+sr.reveal('.newslist', { duration: 700 });
+sr.reveal('.media-list', { duration: 1200 });
+sr.reveal('.media-body', { duration: 800 });
+//sr.reveal('.latest section', { duration: 900 });
+//sr.reveal('.section-inner', { duration: 600 });
+//sr.reveal('.skills aside section', { duration: 2000 });
+//sr.reveal('.footer', { duration: 600 });
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

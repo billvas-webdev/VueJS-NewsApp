@@ -3,7 +3,7 @@
     <div class="container">
       <div class="primary col-md-12 col-sm-12 col-xs-12">
         <h1>Contact Me</h1>
-            <div class="content"><p>If you are interested in connecting with me about other web projects, I'd love to hear from you!</p>
+            <div class="content"><p>{{msg}}</p>
             <div class= "row">
                 <ul class="social list-inline">
                     <li><a href="https://www.facebook.com/facebook" data-toggle="tooltip" title="Visit me on Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -48,7 +48,12 @@ import FootComp from '@/components/FootComp'
     name: 'Contact',
     components: {
 
-}
+},
+    data () {
+      return{
+        msg: "If you are interested in connecting with me about other web projects, I'd love to hear from you!"
+      }
+    }
   }
 
 </script>
