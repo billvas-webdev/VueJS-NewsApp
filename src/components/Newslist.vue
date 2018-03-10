@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'Newslist',
   props: ['source'],
@@ -31,7 +33,8 @@ export default {
   },
   methods: {
     updateSource: function (source) {
-      this.$http.get('https://newsapi.org/v1/articles?source=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
+      axios.get(`https://newsapi.org/v1/articles?source=`+ source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
+      //this.$http.get('https://newsapi.org/v1/articles?source=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
       .then(response => {
         this.articles = response.data.articles;
       });
