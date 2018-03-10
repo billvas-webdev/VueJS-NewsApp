@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+
 
     export default {
       name: 'SourceSelection',
@@ -40,13 +40,13 @@ import axios from 'axios';
 },
 
 created: function () {
-    axios.get(`https://newsapi.org/v1/sources?language=en`)
+   this.axios.get(`https://newsapi.org/v1/sources?language=en`)
     .then(response => {
       this.sources = response.data.sources
     });
 
 
-  /* created: function () {
+   /*created: function () {
       this.$http.get("https://newsapi.org/v1/sources?language=en")
           .then(response => {
             this.sources = response.data.sources;
