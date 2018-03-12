@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     updateSource: function (source) {
-      this.axios.get(`https://newsapi.org/v1/articles?source=`+ source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
+      this.axios.get('https://newsapi.org/v2/top-headlines?sources='+ source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
       //this.$http.get('https://newsapi.org/v1/articles?source=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
       .then(response => {
         this.articles = response.data.articles;
