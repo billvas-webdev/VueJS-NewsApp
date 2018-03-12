@@ -15,6 +15,11 @@
           </div>
         </li>
       </ul>
+       <ul v-if="errors.length > 0">
+      <li v-for="error of errors">
+        {{error.message}}
+      </li>
+    </ul>
     </div>
   </div>
 </div>
@@ -29,6 +34,7 @@ export default {
   data () {
     return {
       articles: [],
+      errors: []
 
     }
   },
@@ -38,6 +44,9 @@ export default {
       //this.$http.get('https://newsapi.org/v1/articles?source=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
       .then(response => {
         this.articles = response.data.articles;
+      })
+      .catch(error => {
+        this.errors.push(error);
       });
     }
   },

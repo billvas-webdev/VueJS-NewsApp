@@ -11,6 +11,11 @@
     <div v-if="source">
       <h6>{{source.description}}</h6>
       <a v-bind:href="source.url" class="btn btn-lg btn-primary btn-block" target="blank">Go To {{source.name}} Website</a>
+      <ul v-if="errors.length > 0">
+      <li v-for="error of errors">
+        {{error.message}}
+      </li>
+    </ul>
     </div><!-- /.btn-primary -->
     </div><!-- /.jumbotron -->
   </div><!-- /.sourceselection -->
@@ -43,15 +48,10 @@ created () {
    this.axios.get(`https://newsapi.org/v1/sources?language=en`)
     .then(response => {
       this.sources = response.data.sources
-    });
-
-
-   /*created: function () {
-      this.$http.get("https://newsapi.org/v1/sources?language=en")
-          .then(response => {
-            this.sources = response.data.sources;
-   });*/
-
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
   }
 }
 </script>
