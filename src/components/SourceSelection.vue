@@ -39,7 +39,7 @@
   }
 },
 
-created: function () {
+created () {
    this.axios.get(`https://newsapi.org/v1/sources?language=en`)
     .then(response => {
       this.sources = response.data.sources

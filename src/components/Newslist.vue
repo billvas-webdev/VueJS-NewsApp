@@ -28,7 +28,8 @@ export default {
   props: ['source'],
   data () {
     return {
-      articles: []
+      articles: [],
+
     }
   },
   methods: {
@@ -40,7 +41,7 @@ export default {
       });
     }
   },
-  created: function () {
+  created () {
     this.updateSource(this.source);
   },
   watch: {
@@ -49,6 +50,7 @@ export default {
     }
   }
 }
+
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.newslist', { duration: 700 });
 sr.reveal('.media-list', { duration: 1200 });
