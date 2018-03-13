@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <select class="form-control" v-on:change="sourceChanged">
-    <option v-bind:value="source.id" v-for="source in sources">{{source.name}}</option>
+    <option v-bind:value="source.id" v-for="source of sources">{{source.name}}</option>
     </select>
     <div v-if="source">
       <h6>{{source.description}}</h6>
@@ -34,7 +34,7 @@
   }
 },
     methods: {
-      sourceChanged: function (e) {
+      sourceChanged (e) {
         this.sources.forEach((source) => {
           if (this.sources.id == e.target.value) {
           this.source = this.sources;
@@ -46,7 +46,7 @@
 
 created () {
    this.axios.get('https://newsapi.org/v2/sources?language=en&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
-    .then(response => {
+    .then((response) => {
       this.sources = response.data.sources
     })
     .catch(e => {
@@ -54,6 +54,7 @@ created () {
     })
   }
 }
+
 </script>
 
 <style scoped>

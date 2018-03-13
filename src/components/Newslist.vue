@@ -2,7 +2,7 @@
   <div class="newslist">
     <div class="flex-container">
       <ul class="media-list">
-        <li class="media" v-for="article in articles">
+        <li class="media" v-for="article of articles">
           <div class="media-left">
             <a v-bind:href="article.url" target="_blank">
               <img class="media-object" v-bind:src="article.urlToImage">
@@ -39,10 +39,10 @@ export default {
     }
   },
   methods: {
-    updateSource: function (source) {
-      this.axios.get('https://newsapi.org/v2/top-headlines?sources='+ source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
-      //this.$http.get('https://newsapi.org/v1/articles?source=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
-      .then(response => {
+    updateSource (source) {
+      this.axios.get('https://newsapi.org/v2/top-headlines?sources=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
+      .then((response) => {
+        console.log(response.data)
         this.articles = response.data.articles;
       })
       .catch(error => {
@@ -54,7 +54,7 @@ export default {
     this.updateSource(this.source);
   },
   watch: {
-    source: function (val) {
+    source (val) {
       this.updateSource(val);
     }
   }
