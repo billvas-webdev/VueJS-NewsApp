@@ -41,7 +41,7 @@ export default {
   methods: {
     updateSource (source) {
       this.axios.get('https://newsapi.org/v2/top-headlines?sources=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
-      .then((response) => {
+      .then(response => {
         console.log(response.data)
         this.articles = response.data.articles;
       })

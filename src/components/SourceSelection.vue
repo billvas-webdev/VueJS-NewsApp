@@ -35,7 +35,7 @@
 },
     methods: {
       sourceChanged (e) {
-        this.sources.forEach((source) => {
+        this.sources.forEach(source => {
           if (this.sources.id == e.target.value) {
           this.source = this.sources;
   }
@@ -46,7 +46,7 @@
 
 created () {
    this.axios.get('https://newsapi.org/v2/sources?language=en&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
-    .then((response) => {
+    .then(response => {
       this.sources = response.data.sources
     })
     .catch(e => {
