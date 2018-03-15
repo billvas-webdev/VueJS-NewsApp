@@ -15,7 +15,7 @@
           </div>
         </li>
       </ul>
-       <ul v-if="errors.length > 0">
+      <ul v-if="errors && errors.length">
       <li v-for="error of errors">
         {{error.message}}
       </li>
@@ -38,6 +38,7 @@ export default {
 
     }
   },
+
   methods: {
     updateSource (source) {
       this.axios.get('https://newsapi.org/v2/top-headlines?sources=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
@@ -45,9 +46,9 @@ export default {
         console.log(response.data)
         this.articles = response.data.articles;
       })
-      .catch(error => {
-        this.errors.push(error);
-      });
+      .catch(e => {
+        //this.errors.push(e);
+      })
     }
   },
   created () {

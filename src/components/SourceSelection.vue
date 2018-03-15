@@ -11,7 +11,7 @@
     <div v-if="source">
       <h6>{{source.description}}</h6>
       <a v-bind:href="source.url" class="btn btn-lg btn-primary btn-block" target="blank">Go To {{source.name}} Website</a>
-      <ul v-if="errors.length > 0">
+      <ul v-if="errors && errors.length">
       <li v-for="error of errors">
         {{error.message}}
       </li>
