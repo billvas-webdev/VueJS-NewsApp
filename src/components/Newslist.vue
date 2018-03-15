@@ -2,7 +2,7 @@
   <div class="newslist">
     <div class="flex-container">
       <ul class="media-list">
-        <li class="media" v-for="article in articles">
+        <li class="media" v-for="article of articles">
           <div class="media-left">
             <a v-bind:href="article.url" target="_blank">
               <img class="media-object" v-bind:src="article.urlToImage">
@@ -15,45 +15,51 @@
           </div>
         </li>
       </ul>
+      <ul v-if="errors && errors.length">
+      <li v-for="error of errors">
+        {{error.message}}
+      </li>
+    </ul>
     </div>
   </div>
 </div>
 </template>
 
 <script>
+
+
 export default {
   name: 'Newslist',
   props: ['source'],
   data () {
     return {
-      articles: []
+      articles: [],
+      errors: []
+
     }
   },
+
   methods: {
-    updateSource: function (source) {
-      this.$http.get('https://newsapi.org/v1/articles?source=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
+    updateSource (source) {
+      this.axios.get('https://newsapi.org/v2/top-headlines?sources=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
       .then(response => {
+        console.log(response.data)
         this.articles = response.data.articles;
-      });
+      })
+      .catch(e => {
+        //this.errors.push(e);
+      })
     }
   },
-  created: function () {
+  created () {
     this.updateSource(this.source);
   },
   watch: {
-    source: function (val) {
+    source (val) {
       this.updateSource(val);
     }
   }
 }
-window.sr = ScrollReveal({ reset: true });
-sr.reveal('.newslist', { duration: 700 });
-sr.reveal('.media-list', { duration: 1200 });
-sr.reveal('.media-body', { duration: 800 });
-//sr.reveal('.latest section', { duration: 900 });
-//sr.reveal('.section-inner', { duration: 600 });
-//sr.reveal('.skills aside section', { duration: 2000 });
-//sr.reveal('.footer', { duration: 600 });
 
 </script>
 

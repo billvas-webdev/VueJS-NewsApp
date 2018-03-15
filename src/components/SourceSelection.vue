@@ -6,11 +6,16 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <select class="form-control" v-on:change="sourceChanged">
-    <option v-bind:value="source.id" v-for="source in sources">{{source.name}}</option>
+    <option v-bind:value="source.id" v-for="source of sources">{{source.name}}</option>
     </select>
     <div v-if="source">
       <h6>{{source.description}}</h6>
       <a v-bind:href="source.url" class="btn btn-lg btn-primary btn-block" target="blank">Go To {{source.name}} Website</a>
+      <ul v-if="errors && errors.length">
+      <li v-for="error of errors">
+        {{error.message}}
+      </li>
+    </ul>
     </div><!-- /.btn-primary -->
     </div><!-- /.jumbotron -->
   </div><!-- /.sourceselection -->
@@ -18,17 +23,19 @@
 
 <script>
 
+
     export default {
       name: 'SourceSelection',
       data () {
         return {
           sources: [],
           source: ''
+
   }
 },
     methods: {
-      sourceChanged: function (e) {
-        this.sources.forEach((source) => {
+      sourceChanged (e) {
+        this.sources.forEach(source => {
           if (this.sources.id == e.target.value) {
           this.source = this.sources;
   }
@@ -37,14 +44,17 @@
   }
 },
 
-    created: function () {
-      this.$http.get("https://newsapi.org/v1/sources?language=en")
-          .then(response => {
-            this.sources = response.data.sources;
-   });
-
+created () {
+   this.axios.get('https://newsapi.org/v2/sources?language=en&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
+    .then(response => {
+      this.sources = response.data.sources
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
   }
 }
+
 </script>
 
 <style scoped>
