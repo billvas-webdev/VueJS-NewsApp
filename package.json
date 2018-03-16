@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap-sass": "^3.3.7",
+    "moment": "^2.21.0",
     "npm": "^5.7.1",
     "sw-precache-webpack-dev-plugin": "^0.2.0",
     "vue": "^2.4.2",
