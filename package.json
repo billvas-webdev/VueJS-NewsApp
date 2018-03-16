@@ -13,6 +13,7 @@
     "axios": "^0.18.0",
     "bootstrap-sass": "^3.3.7",
     "npm": "^5.7.1",
+    "sw-precache-webpack-dev-plugin": "^0.2.0",
     "vue": "^2.4.2",
     "vue-animate-transitions": "^1.0.0",
     "vue-axios": "^2.0.2",
