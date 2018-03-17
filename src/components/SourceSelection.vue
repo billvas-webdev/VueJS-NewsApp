@@ -33,13 +33,13 @@
 
   }
 },
-    methods: {
-      sourceChanged (e) {
-        this.sources.forEach(source => {
-          if (this.sources.id == e.target.value) {
-          this.source = this.sources;
+     methods: {
+      sourceChanged: function (e) {
+        for (var i=0; i<this.sources.length; i++) {
+          if (this.sources[i].id == e.target.value) {
+            this.source = this.sources[i];
   }
-});
+}
     this.$emit('sourceChanged', e.target.value);
   }
 },
