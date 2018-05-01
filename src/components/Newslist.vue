@@ -66,6 +66,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 body{
+
   font-family: "Avenir";
 }
 a {
@@ -141,6 +142,7 @@ li.media  {
     display: none;
 }
 h4 {
+    margin-top: 0;
     text-align: center;
     line-height: 1em;
     font-size: 2.6rem;
@@ -169,7 +171,7 @@ li.media  {
 }
 
 h4 {
-    margin: -.9rem 0 .75rem 0;
+    margin: 0 0 .75rem 0;
     line-height: 1em;
     font-size: 1.4rem;
 }
@@ -204,7 +206,7 @@ li.media  {
     padding:-5px;
 }
 h4 {
-    margin: -.6rem 0 .75rem 0;
+    margin: 0 0 .75rem 0;
     line-height: 1.35rem;
     font-size: 1.5rem;
 }
@@ -223,7 +225,7 @@ li.media  {
     height: 28.5rem;
 }
 h4{
-    margin: -.65rem 0 .75rem 0;
+    margin: 0 0 .75rem 0;
     line-height: 1em;
     font-size: 2.1rem;
 }
@@ -252,7 +254,7 @@ li.media  {
     height: 26rem;
 }
 h4{
-    margin: -.5rem 0 .75rem 0;
+    margin: 0 0 .75rem 0;
     line-height: 1em;
     font-size: 2.1rem;
 }
@@ -281,7 +283,7 @@ li.media  {
     height: 37.5rem;
 }
 h4{
-    margin: -.6rem 0 .75rem 0;
+    margin: 0 0 .75rem 0;
     line-height: .9em;
     font-size: 3rem;
 
