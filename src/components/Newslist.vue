@@ -27,7 +27,6 @@
 
 <script>
 
-
 export default {
   name: 'Newslist',
   props: ['source'],
@@ -36,6 +35,15 @@ export default {
       articles: [],
       errors: []
 
+    }
+  },
+
+  created () {
+    this.updateSource(this.source);
+  },
+  watch: {
+    source (val) {
+      this.updateSource(val);
     }
   },
 
@@ -51,14 +59,6 @@ export default {
       })
     }
   },
-  created () {
-    this.updateSource(this.source);
-  },
-  watch: {
-    source (val) {
-      this.updateSource(val);
-    }
-  }
 }
 
 </script>
@@ -91,7 +91,7 @@ a:focus {
 .media {
     border-top: .5px solid #f8b500;
 }
-  li.media{
+li.media{
     font-family: 'Avenir', 'Lato', 'Montserrat';
     background-color: #131313;
     background: #000000;  /* fallback for old browsers */
@@ -100,7 +100,7 @@ a:focus {
     border-radius: .5em;
     width: auto;
     height: 30.75rem;
-  }
+}
 .newslist {
     -webkit-transition: all 1.4s ease-in-out;
     -moz-transition: all 1.4s ease-in-out;
@@ -109,12 +109,16 @@ a:focus {
     color:azure;
     font-size: 2.25rem;
 }
-  p{
+p {
     font-family: "Avenir", 'Montseratt';
-    line-height: 1.25em;
+    line-height: 1.16em;
     padding-right: 1.5em;
     font-size: 1.2em;
     font-weight: normal;
+    overflow: hidden;
+    display: -webkit-box; /* added ellipses for more than 5 lines*/
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
 }
   h4 {
     line-height: 1em;
@@ -132,7 +136,7 @@ a:focus {
 li.media  {
     padding: .5rem 2.25rem 0rem 2.5rem;
     height: 52rem;
-  }
+}
 .media-object {
     display: none;
 }
@@ -180,7 +184,7 @@ p{
   font-size: 1.4rem;
 }
 }
-@media (max-width: 733px) and (min-width: 360px){
+@media (max-width: 568px) and (min-width: 360px){
 li.media  {
     height: 18.5rem;
     padding: .25rem 0rem 0rem 0rem;
@@ -211,8 +215,7 @@ h5{
 }
 p{
     margin: -.75rem 0 .5rem 0;
-    line-height: 1.5rem;
-    font-size: 1.45rem;
+    font-size: 1.5rem;
 }
 }
 @media (max-width: 733px) and (min-width: 569px){
@@ -231,8 +234,8 @@ h5 {
 }
   .media-object {
     margin: 1.75rem 0 0 1rem;
-    border-radius:15px;
-    float:left;
+    border-radius: 15px;
+    float: left;
     padding: .5rem .5rem .5rem .5rem;
     width: 30rem;
     height: 25rem;
@@ -240,7 +243,7 @@ h5 {
 p{
     margin: -.25rem 0 .5rem 0;
     line-height: 2rem;
-    font-size: 1.85rem;
+    font-size: 1.7rem;
 }
 }
 @media (max-width: 991px) and (min-width: 734px){
@@ -268,9 +271,9 @@ h5{
 }
 p{
     margin: -.5rem 0 .5rem 0;
-    line-height: 2rem;
+    line-height: 2.2rem;
     font-size: 2rem;
- }
+}
 }
 @media (max-width: 3000px) and (min-width: 992px){
 

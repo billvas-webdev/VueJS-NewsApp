@@ -3,11 +3,11 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
       </button>
       <router-link class="navbar-brand" to="/"><i class="fa fa-home" aria-hidden="true"></i> Daily News and Weather</router-link>
     </div>
@@ -30,6 +30,11 @@
 </script>
 
 <style scoped>
+h2{
+    text-align: center;
+    font-weight:bold;
+    margin-bottom: 10px;
+}
 .navbar-nav>li>a{
     color:#9cd1ff;
     -webkit-transition: all 0.4s ease-in-out;
@@ -61,11 +66,47 @@
     border-top: .5px solid lightgoldenrodyellow;
     border-radius: .5em;
 }
-h2{
-    text-align: center;
-    font-weight:bold;
-    margin-bottom: 10px;
+.navbar-toggle{
+  padding: 11px ;
+
 }
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  -webkit-transform: translateX(3px) rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+  transform: translateX(3px) rotate(45deg);
+  transform-origin: 10% 10%;
+  -ms-transform: translateX(3px) rotate(45deg);
+  -ms-transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  -webkit-transform:  translateX(3px) rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+  transform:  translateX(3px) rotate(-45deg);
+  transform-origin: 10% 90%;
+  -ms-transform:  translateX(3px) rotate(-45deg);
+  -ms-transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  -ms-transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  -ms-transform:  rotate(0);
+}
+
 
 </style>
 

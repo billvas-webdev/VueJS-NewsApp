@@ -33,7 +33,17 @@
 
   }
 },
-     methods: {
+
+created () {
+   this.axios.get('https://newsapi.org/v2/sources?language=en&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
+    .then(response => {
+      this.sources = response.data.sources
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
+  },
+methods: {
       sourceChanged: function (e) {
         for (var i=0; i<this.sources.length; i++) {
           if (this.sources[i].id == e.target.value) {
@@ -44,17 +54,15 @@
   }
 },
 
-created () {
-   this.axios.get('https://newsapi.org/v2/sources?language=en&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
-    .then(response => {
-      this.sources = response.data.sources
-    })
-    .catch(e => {
-      this.errors.push(e)
-    })
-  }
-}
 
+}
+/*methods: {
+      sourceChanged: function (e) {
+        for (let source in sources) {
+          if (this.sources[source].id == e.target.value) {
+          this.source = this.sources[source];
+  }
+}*/
 </script>
 
 <style scoped>
@@ -62,9 +70,9 @@ body{
   font-family: 'Avenir','Montserrat','Lato', arial, sans-serif;
 }
 .jumbotron {
-    padding:1em;
+    padding:1em 1em 0.5em 1em;
     zoom: 155%;
-    height: 15.75em;
+    height: auto;
     border-top: .5px solid lightgoldenrodyellow;
     border-radius: .5em;
     /*background-color: #3491e4;*/
@@ -99,10 +107,15 @@ h6{
     padding:  0;
     margin-top: 7px;
     margin-bottom: 4px;
+    overflow: hidden;
+    display: -webkit-box; /* added ellipses for more than 5 lines*/
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
 }
 .btn-primary{
     display:block; /* change this from inline-block */
-    width:55%; /* setting the width */
+    width: 75%; /* setting the width */
     margin:0 auto; /* this will center  it */
     font-weight: 500;
     font-family: 'Avenir','Montserrat','Lato', arial, sans-serif;
@@ -149,7 +162,8 @@ select.form-control {
 
 .jumbotron  {
     zoom:100%;
-    height: 27rem;
+    height: auto;
+    padding-bottom: .5rem;
 }
 h2{
     font-family: 'Avenir','Montserrat','Lato', arial, sans-serif;
@@ -172,8 +186,8 @@ h6{
 }
 .btn-primary{
     margin-top: 1rem;
-    width:auto;
-    font-size: 1.5rem;
+    width:75%;
+    font-size: 1.3rem;
 }
 
 }
@@ -183,7 +197,8 @@ h6{
 
   .jumbotron  {
     zoom:100%;
-    height: 25.5rem;
+    height: auto;
+    padding-bottom: .5rem;
 }
 h2{
     font-family: 'Avenir','Montserrat','Lato', arial, sans-serif;
@@ -199,15 +214,15 @@ h4{
 h6{
     font-family: "Avenir";
     font-weight:500;
-    font-size: 1.45rem;
+    font-size: 1.25rem;
 }
 .fa-newspaper-o {
     font-size: 1.75em;
 }
 .btn-primary{
     margin-top: 1rem;
-    width:auto;
-    font-size: 1.5rem;
+    width: auto;
+    font-size: 1.3rem;
 }
 
 }
@@ -216,7 +231,8 @@ h6{
 
 .jumbotron  {
     zoom:115%;
-    height: 28.25rem;
+    height: auto;
+    padding-bottom: .5rem;
 }
 h2{
     font-family: "Avenir";
@@ -232,14 +248,14 @@ h6{
     line-height: 1.75rem;
     font-family: "Avenir";
     font-weight:500;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
 }
 .btn-primary{
     margin-bottom: 1rem;
     font-weight: 700;
     font-family: "Avenir";
-    width: auto;
-    font-size: 1.37rem;
+    width: 95%;
+    font-size: 1.25rem;
 }
 }
 
@@ -247,7 +263,8 @@ h6{
 
 .jumbotron  {
     zoom:115%;
-    height: 27rem;
+    height: auto;
+    padding-bottom: .5rem;
 }
 h2{
     font-family: "Avenir";
@@ -263,13 +280,13 @@ h6{
     line-height: 1.75rem;
     font-family: "Avenir";
     font-weight:500;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
 }
 .btn-primary{
     margin-top: 1rem;
     font-weight: 700;
     font-family: "Avenir";
-    width: auto;
+    width: 95%;
     font-size: 1.37rem;
 }
 }
@@ -278,7 +295,8 @@ h6{
 
 .jumbotron  {
     zoom:115%;
-    height: 26.25rem;
+    height: auto;
+    padding-bottom: .5rem;
 }
 h2{
     font-family: "Avenir";
@@ -291,7 +309,7 @@ h4{
     margin: -1rem 0 .5rem 6rem;
 }
 h6{
-    line-height: 1.75rem;
+    line-height: 1.9rem;
     font-family: "Avenir";
     font-weight:500;
     font-size: 1.45rem;
@@ -300,7 +318,7 @@ h6{
     margin-bottom: 1rem;
     font-weight: 700;
     font-family: "Avenir";
-    width: auto;
+    width: 90%;
     font-size: 1.37rem;
 }
 }
@@ -308,7 +326,8 @@ h6{
 
 .jumbotron  {
     zoom:115%;
-    height: 26.5rem;
+    height: auto;
+    padding-bottom: .5rem;
 }
 h2{
     font-family: "Avenir";
@@ -330,7 +349,7 @@ h6{
     margin-bottom: 1.5rem;
     font-weight: 700;
     font-family: "Avenir";
-    width: auto;
+    width: 90%;
     font-size: 1.55rem;
 }
 }
@@ -338,7 +357,8 @@ h6{
 
 .jumbotron  {
     zoom:115%;
-    height: 25rem;
+    height: auto;
+    padding-bottom: .5rem;
 }
 h2{
     font-family: "Avenir";
@@ -360,7 +380,7 @@ h6{
     margin-bottom: 1rem;
     font-weight: 700;
     font-family: "Avenir";
-    width: auto;
+    width: 85%;
     font-size: 1.65rem;
 }
 }
@@ -368,7 +388,8 @@ h6{
 
 .jumbotron  {
     zoom:115%;
-    height: 25rem;
+    height: auto;
+    padding-bottom: .5rem;
 }
 h2{
     font-family: 'Ariel','Montserrat','Lato', arial, sans-serif;
@@ -389,7 +410,7 @@ h6{
 .btn-primary{
     font-weight: 700;
     font-family: "Avenir";
-    width: auto;
+    width: 75%;
     font-size: 1.6rem;
 }
 }
