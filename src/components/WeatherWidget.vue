@@ -1,10 +1,12 @@
+import { prependOnceListener } from "cluster";
+
 <template>
   <div class="jumbotron">
     <weather
         api-key="a1a5357a4bc875aba578cf0eec58ab94"
         title="Local Weather Forecast"
-        latitude="47.671081"
-        longitude="-122.326071"
+        latitude="47.6709847"
+        longitude="-122.3260316"
         language="en"
         units="us"
         bar-color="#2b3b50"
@@ -24,9 +26,12 @@ import 'vue-weather-widget/dist/css/vue-weather-widget.css';
 
     created () {
       if(navigator.geolocation){
-         navigator.geolocation.getCurrentPosition(position => {
-          this.lat = position.coords.latitude;
-          this.lon = position.coords.longitude;
+        navigator.geolocation.getCurrentPosition(position => {
+          let lat = position.coords.latitude.toString();
+          let lon = position.coords.longitude.toString();
+          console.log(lat, lon)
+
+
         });
       }
     }
