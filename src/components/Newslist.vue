@@ -10,7 +10,7 @@
           </div>
           <div class="media-body">
             <h4 class="media-heading"><a v-bind:href="article.url" target="_blank">{{article.title}}</a></h4>
-            <h5><i>by {{article.author}}</i></h5>
+            <h5><i>by {{article.source.name}}</i></h5>
             <p>{{article.description}}</p>
           </div>
         </li>
@@ -49,7 +49,8 @@ export default {
 
   methods: {
     updateSource (source) {
-      this.axios.get('https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?sources=' + source + '&apiKey=30fdd9c8493742eebe75a786fc36f1bd')
+
+      this.axios.get(`https://cors-anywhere.herokuapp.com/https://gnews.io/api/v3/top-news/${source}?token=00fa4abdddcbdaceda5eea6bbf6f9105`)
       .then(response => {
         console.log(response.data)
         this.articles = response.data.articles;

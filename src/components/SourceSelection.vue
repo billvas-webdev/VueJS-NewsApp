@@ -12,15 +12,19 @@
       </select>-->
       <select class="form-control list-inline" data-show-icon="true" v-on:change="sourceChanged">
         <option value>Select News Source</option>
-        <option v-bind:value="source.id" v-for="source of sources">{{source.name}}</option>
+        <option
+          v-bind:value="source.source.timestamp"
+          v-for="source of sources"
+        >{{source.source.name}}</option>
       </select>
       <div v-if="source">
         <h6>{{source.description}}</h6>
+
         <a
           v-bind:href="source.url"
           class="btn btn-lg btn-primary btn-block"
           target="blank"
-        >Go To {{source.name}} Website</a>
+        >Go To {{source.source.name}} Website</a>
         <ul v-if="errors && errors.length">
           <li v-for="error of errors">{{error.message}}</li>
         </ul>
@@ -45,10 +49,11 @@ export default {
   created() {
     this.axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/sources?language=en&apiKey=30fdd9c8493742eebe75a786fc36f1bd"
+        `https://cors-anywhere.herokuapp.com/https://gnews.io/api/v3/top-news/?token=00fa4abdddcbdaceda5eea6bbf6f9105`
       )
       .then(response => {
-        this.sources = response.data.sources;
+        console.log(response.data);
+        this.sources = response.data.articles;
       })
       .catch(e => {
         this.errors.push(e);
