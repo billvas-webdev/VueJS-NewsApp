@@ -1,21 +1,34 @@
 # Vue News and Weather App
 
-**News and Weather WebApp utilizing Vue JS, Vue Resource, Geolocation, DarkSki API, Node JS, News API, Bootstrap, JQuery and Google Analytics- Capstone project for Seattle University Web Development WATS 4030**
+## Capstone project for Seattle University Web Development Curriculum
 
-## Build Setup
+- **News and Weather WebApp**
+  - **Vue JS**
+  - **Vue Resource**
+  - **Geolocation**
+  - **DarkSki API**
+  - **Node JS**
+  - **News API**
+  - **Bootstrap**
+  - **JQuery**
+  - **Google Analytics**
+
+## Local Install
+
+- **Due to recent changes in NewsApi's free API plan, project must be installed locally to view news sources and articles**
 
 ``` bash
+
+# clone repo from github
+
+git clone git@github.com:billvas-webdev/vue-news-pwa.git
+
+# cd into project directory
+cd vue-news-pwa
+
 # install dependencies
 npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
