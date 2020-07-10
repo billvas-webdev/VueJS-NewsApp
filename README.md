@@ -24,7 +24,7 @@
 git clone git@github.com:billvas-webdev/VueJS-NewsApp.git
 
 # cd into project directory
-cd vue-news-pwa
+cd VueJS-NewsApp
 
 # install dependencies
 npm install
