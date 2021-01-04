@@ -1,28 +1,33 @@
 <template>
   <div class="sourceselection">
     <div class="jumbotron">
-      <h2>
-        <span class="fa fa-newspaper-o"></span>Daily News
-      </h2>
+      <h2><span class="fa fa-newspaper-o"></span>Daily News</h2>
       <h4>Select News Source</h4>
       <meta name="description" content />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <!-- <select class="form-control" v-on:change="sourceChanged">
         <option v-bind:value="source.id" v-for="source of sources">{{source.name}}</option>
       </select>-->
-      <select class="form-control list-inline" data-show-icon="true" v-on:change="sourceChanged">
+      <select
+        class="form-control list-inline"
+        data-show-icon="true"
+        v-on:change="sourceChanged"
+      >
         <option value>Select News Source</option>
-        <option v-bind:value="source.id" v-for="source of sources">{{source.name}}</option>
+        <option v-bind:value="source.id" v-for="source of sources">
+          {{ source.name }}
+        </option>
       </select>
       <div v-if="source">
-        <h6>{{source.description}}</h6>
+        <h6>{{ source.description }}</h6>
         <a
           v-bind:href="source.url"
           class="btn btn-lg btn-primary btn-block"
           target="blank"
-        >Go To {{source.name}} Website</a>
+          >Go To {{ source.name }} Website</a
+        >
         <ul v-if="errors && errors.length">
-          <li v-for="error of errors">{{error.message}}</li>
+          <li v-for="error of errors">{{ error.message }}</li>
         </ul>
       </div>
       <!-- /.btn-primary -->
@@ -38,32 +43,32 @@ export default {
   data() {
     return {
       sources: [],
-      source: ""
+      source: "",
     };
   },
 
   created() {
     this.axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/sources?language=en&apiKey=30fdd9c8493742eebe75a786fc36f1bd"
+        "https://newsapi.org/v2/sources?language=en&apiKey=30fdd9c8493742eebe75a786fc36f1bd"
       )
-      .then(response => {
+      .then((response) => {
         this.sources = response.data.sources;
       })
-      .catch(e => {
+      .catch((e) => {
         this.errors.push(e);
       });
   },
   methods: {
-    sourceChanged: function(e) {
+    sourceChanged: function (e) {
       for (var i = 0; i < this.sources.length; i++) {
         if (this.sources[i].id == e.target.value) {
           this.source = this.sources[i];
         }
       }
       this.$emit("sourceChanged", e.target.value);
-    }
-  }
+    },
+  },
 };
 /*methods: {
       sourceChanged: function (e) {
